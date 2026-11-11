@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0246CA">
+
+  <title>Innovation Days 2026 — Fundació BIT</title>
+  <meta name="description" content="Dos jornades per descobrir oportunitats, compartir coneixement i connectar l’ecosistema empresarial i tecnològic de les Illes Balears. 3 i 4 de desembre de 2026 al ParcBIT.">
+  <meta name="content-language" content="ca_ES">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Innovation Days 2026 — Fundació BIT">
+  <meta property="og:description" content="Dos jornades per descobrir oportunitats, compartir coneixement i connectar l’ecosistema empresarial i tecnològic de les Illes Balears. 3 i 4 de desembre de 2026 al ParcBIT.">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="400x320" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="alternate" hreflang="ca" href="?lang=ca">
+  <link rel="alternate" hreflang="es" href="?lang=es">
+
+  <link rel="preload" href="fonts/spacegrotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles/main.css">
+
+  <script src="javascript/dictionaries.js" defer></script>
+  <script src="javascript/i18n.js" defer></script>
+  <script src="javascript/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contingut principal</a>
+
+  <header class="site-header" data-site-header>
+    <div class="site-header__inner">
+      <a class="brand" href="#inicio" data-i18n-attrs="aria-label:a11y.brand" aria-label="Fundació BIT — Balears Innovation TechHub">
+        <img class="brand__logo" src="images/logo-fbit.png" width="2481" height="970" alt="Fundació BIT — Balears Innovation TechHub" fetchpriority="high">
+      </a>
+
+      <div class="site-header__actions">
+        <nav class="nav" data-i18n-attrs="aria-label:nav.label" aria-label="Navegació principal">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#que-es" data-i18n="nav.whatIs">Què són?</a></li>
+            <li><a class="nav__link" href="#programa" data-i18n="nav.program">Programa</a></li>
+          </ul>
+        </nav>
+
+        <div class="lang-switch" role="group" data-i18n-attrs="aria-label:a11y.lang" aria-label="Idioma">
+          <a class="lang-switch__btn is-active" href="?lang=ca" data-lang="ca" hreflang="ca" lang="ca" data-i18n-attrs="aria-label:a11y.langCa" aria-label="Català">CAT</a>
+          <a class="lang-switch__btn" href="?lang=es" data-lang="es" hreflang="es" lang="es" data-i18n-attrs="aria-label:a11y.langEs" aria-label="Castellano">ES</a>
+        </div>
+
+        <button class="burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" data-i18n-attrs="aria-label:a11y.openMenu" aria-label="Obre el menú de navegació">
+          <span class="burger__box" aria-hidden="true">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" id="mobile-menu" data-drawer hidden>
+    <div class="drawer__backdrop" data-drawer-close></div>
+    <div class="drawer__panel" role="dialog" aria-modal="true" data-i18n-attrs="aria-label:nav.mobileLabel" aria-label="Navegació mòbil">
+      <nav class="drawer__nav">
+        <ul class="drawer__list">
+          <li><a class="drawer__link" href="#que-es" data-i18n="nav.whatIs">Què són?</a></li>
+          <li><a class="drawer__link" href="#programa" data-i18n="nav.program">Programa</a></li>
+        </ul>
+      </nav>
+      <div class="drawer__lang" role="group" data-i18n-attrs="aria-label:a11y.lang" aria-label="Idioma">
+        <a class="drawer__lang-btn" href="?lang=ca" data-lang="ca" hreflang="ca" lang="ca" data-i18n-attrs="aria-label:a11y.langCa" aria-label="Català">
+          <span data-i18n="lang.cat">Català</span>
+        </a>
+        <a class="drawer__lang-btn" href="?lang=es" data-lang="es" hreflang="es" lang="es" data-i18n-attrs="aria-label:a11y.langEs" aria-label="Castellano">
+          <span data-i18n="lang.cast">Castellano</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ============================ BLOCO 2 — HERO ============================ -->
+    <section class="hero" id="inicio">
+      <div class="hero__media" aria-hidden="true" data-hero-media></div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <h1 class="visually-hidden">Innovation Days 2026</h1>
+        <div class="hero__content">
+          <p class="hero__eyebrow" data-i18n="hero.eyebrow">3 i 4 de desembre de 2026 · Auditori ParcBIT, Palma</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://forms.cloud.microsoft/e/FkwdHGdVYX" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaAssistant">Inscriu-te com a assistent</a>
+            <a class="btn btn--secondary" href="https://keiretsuforum.es/foros-de-inversion/foro-de-inversion-palma-tech-04-12-2026/" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaForum">Inscriu-te al Fòrum d’inversió</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= BLOQUE 3 — QUÈ SÓN / DESCRIPCIÓ ================= -->
+    <section class="section about" id="que-es">
+      <div class="section__inner">
+        <div class="about__grid">
+          <div class="about__copy">
+            <p class="eyebrow" data-i18n="about.eyebrow">El punt de trobada de la innovació balear</p>
+            <h2 class="section__title" data-i18n="about.title">Dos jornades per connectar l’ecosistema innovador de les Illes Balears</h2>
+
+            <div class="prose">
+              <p data-i18n-html="about.p1">Els <strong>Innovation Days</strong> són la cita de referència de la innovació de les Illes Balears. Dues jornades organitzades al ParcBit que posen en contacte el teixit empresarial i tecnològic de l’arxipèlag amb l’Administració pública, les institucions financeres i els inversors que hi aposten per fer créixer els projectes innovadors.</p>
+              <p data-i18n-html="about.p2">L’edició 2026 respon a una pregunta que es repeteix cada any: <strong>quines portes cal tocar, quin camí seguir i qui és qui</strong> en el món de la innovació? El programa articula la resposta en dos eixos: els instruments que permeten transformar una idea en un projecte viable, i l’accés al capital per fer-lo créixer.</p>
+              <p data-i18n-html="about.p3">L’organització correspon al <strong>Govern de les Illes Balears</strong>, a través de l’ADR Balears, i a la <strong>Fundació Balear d’Innovació i Tecnologia</strong>, que gestiona el ParcBit i el CentreBit Menorca. La Fundació BIT és una entitat pública sense ànim de lucre dependent del Govern: executa les estratègies d’R+D+I, dona suport a les empreses i inversors de base tecnològica en totes les fases del seu cicle de vida i promou la participació del teixit empresarial en convocatories de finançament autonòmiques, nacionals i europees.</p>
+            </div>
+
+            <a class="link-arrow" href="https://www.fundaciobit.org/que-es-la-fundacio-bit/" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="about.link">Més informació sobre la Fundació BIT</span>
+              <span class="link-arrow__icon" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <aside class="about__aside" aria-labelledby="org-title">
+            <div class="org-card">
+              <h3 class="org-card__title" id="org-title" data-i18n="about.orgTitle">Organitzen l’edició 2026</h3>
+              <ul class="org-card__list">
+                <li class="org-card__item">
+                  <span class="org-card__name" data-i18n="about.org1">Govern de les Illes Balears</span>
+                  <span class="org-card__desc" data-i18n="about.org1Desc">A través de la Fundació Balear d’Innovació i Tecnologia amb la col·laboració de l’ADR Balears, l’agència de desenvolupament regional.</span>
+                </li>
+                <li class="org-card__item">
+                  <span class="org-card__name" data-i18n="about.org2">Fundació Balear d’Innovació i Tecnologia</span>
+                  <span class="org-card__desc" data-i18n="about.org2Desc">Entitat pública sense ànim de lucre que gestiona el ParcBit i el CentreBit Menorca.</span>
+                </li>
+                <li class="org-card__item">
+                  <span class="org-card__name" data-i18n="about.org3">Keiretsu Forum</span>
+                  <span class="org-card__desc" data-i18n="about.org3Desc">Xarxa internacional d’inversors privats.</span>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+
+        <div class="overview">
+          <p class="eyebrow" data-i18n="overview.eyebrow">Innovació, talent i inversió</p>
+          <h2 class="section__title" data-i18n="overview.title">Descobreix quines portes cal tocar, quin camí seguir i qui és qui en el món de la innovació</h2>
+          <p class="overview__lead" data-i18n="overview.lead">Dues jornades per descobrir oportunitats, compartir coneixement i connectar l’ecosistema empresarial i tecnològic de les Illes Balears.</p>
+
+          <div class="prose prose--wide">
+            <p data-i18n-html="overview.p1">El dijous 3 de desembre, la jornada se centra a <strong>Innovar a les Illes Balears</strong>: el balanç de les actuacions 2023–2026 i les oportunitats per al teixit empresarial. Hi intervenen els responsables de la RIS3 i dels principals instruments de suport —Turboconvo, CDTI i la Unitat Acceleradora de Projectes Estratègics—, els hocs d’innovació del ParcBit i els CentresBit, i casos d’èxit d’empreses de l’ecosistema que expliquen què significa innovar en primera persona.</p>
+            <p data-i18n-html="overview.p2">El divendres 4 de desembre, la jornada gira entorn de <strong>De la idea a la inversió</strong>. La Conferència i Fòrum <strong>PALMA TECH’26</strong> connecta les startups de les Illes Balears amb inversors, les startups en acció piten davant un panell qualificat i s’obre el micròfon per als inversors. La jornada es clou amb una taula rodona sobre criteris d’inversió i les claus per finançar i fer créixer una startup.</p>
+            <p data-i18n="overview.p3">Entrem les dues sessions hi ha temps per al networking: pauses cafè, espais de contacte i finger food al final de cada dia. Els Innovation Days són, en definitiva, l’espai on el talent troba capital, les pimes troben instruments i l’ecosistema es coneix de primera mà.</p>
+          </div>
+
+          <ul class="stats" data-stats>
+            <li class="stats__item reveal">
+              <span class="stats__value"><span data-counter="2">2</span></span>
+              <span class="stats__label" data-i18n="stats.days">jornades</span>
+            </li>
+            <li class="stats__item reveal">
+              <span class="stats__value"><span data-counter="23">23</span></span>
+              <span class="stats__label" data-i18n="stats.sessions">sessions</span>
+            </li>
+            <li class="stats__item reveal">
+              <span class="stats__value"><span data-counter="10">10</span></span>
+              <span class="stats__label" data-i18n="stats.speakers">ponents</span>
+            </li>
+            <li class="stats__item reveal">
+              <span class="stats__value"><span data-counter="1">1</span></span>
+              <span class="stats__label" data-i18n="stats.forum">fòrum d’inversió</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ BLOQUE 4 — PROGRAMA ======================== -->
+    <section class="section program" id="programa">
+      <div class="section__inner">
+        <header class="section__head">
+          <p class="eyebrow" data-i18n="program.eyebrow">Agenda</p>
+          <h2 class="section__title" data-i18n="program.title">Programa</h2>
+          <p class="section__intro" data-i18n="program.intro">Dos dies, vint-i-tres sessions i una agenda construïda al voltant de dos objectius: coneixement pràctic i contacte directe.</p>
+        </header>
+
+        <div class="tabs" data-tabs>
+          <div class="tabs__list" role="tablist" data-i18n-attrs="aria-label:program.tablist" aria-label="Programa per dies">
+            <button class="tabs__tab is-active" type="button" role="tab" id="tab-d1" aria-controls="panel-d1" aria-selected="true" tabindex="0" data-tab="1">
+              <span class="tabs__day" data-i18n="program.tab1Day">Dijous 3</span>
+              <span class="tabs__date" data-i18n="program.tab1Date">3 de desembre</span>
+            </button>
+            <button class="tabs__tab" type="button" role="tab" id="tab-d2" aria-controls="panel-d2" aria-selected="false" tabindex="-1" data-tab="2">
+              <span class="tabs__day" data-i18n="program.tab2Day">Divendres 4</span>
+              <span class="tabs__date" data-i18n="program.tab2Date">4 de desembre</span>
+            </button>
+            <span class="tabs__indicator" data-tab-indicator aria-hidden="true"></span>
+          </div>
+
+          <div class="tabs__panels">
+            <!-- ---------------------------- DÍA 1 ---------------------------- -->
+            <div class="tabs__panel" role="tabpanel" id="panel-d1" aria-labelledby="tab-d1" tabindex="0" data-panel="1">
+              <p class="tabs__subtitle" data-i18n="program.d1Subtitle">Innovar a les Illes Balears: de les idees a les oportunitats de negoci. Balanç d’actuacions 2023–2026 i oportunitats per al teixit empresarial.</p>
+
+              <ol class="timeline" data-timeline>
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-03T09:00">09:00</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.logistics">Organització</p>
+                    <h3 class="session__title" data-i18n="program.d1s01.title">Inscripcions</h3>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-03T09:15">09:15</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.principal">Obertura</p>
+                    <h3 class="session__title" data-i18n="program.d1s02.title">Obertura institucional: la innovació com a instrument de competitivitat i diversificació econòmica de les Illes Balears</h3>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d1s02.speaker">Antoni Costa</span>
+                      <span class="session__role" data-i18n="program.d1s02.role">Vicepresident primer de les Illes Balears</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-03T09:30">09:30</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.instrument">Instruments</p>
+                    <h3 class="session__title" data-i18n="program.d1s03.title">Una estratègia per transformar idees en projectes</h3>
+                    <p class="session__desc" data-i18n="program.d1s03.desc">RIS3, prioritats d’innovació i principals instruments desenvolupats durant 2023–2026 i la futura RIS3 2027–2034.</p>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d1s03.speaker">Sebastian González</span>
+                      <span class="session__role" data-i18n="program.d1s03.role">Director general d’Innovació i Transformació Digital</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-03T10:00">10:00</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.instrument">Instruments</p>
+                    <h3 class="session__title" data-i18n="program.d1s04.title">Turboconvo: ajuts per a impulsar la innovació i la digitalització de les petites i mitjanes empreses de les Illes Balears</h3>
+                    <p class="session__desc" data-i18n="program.d1s04.desc">Resultats i previsions.</p>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d1s04.speaker">Josué Díaz</span>
+                      <span class="session__role" data-i18n="program.d1s04.role">Cap de servei d’innovació del Govern de les Illes Balears</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-03T10:20">10:20</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.instrument">Instruments</p>
+                    <h3 class="session__title" data-i18n="program.d1s05.title">Instruments a la innovació del CDTI</h3>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d1s05.speaker">Pilar González</span>
+                      <span class="session__role" data-i18n="program.d1s05.role">Cap de departament de Promoció institucional i cooperació territorial del CDTI</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="session session--break">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-03T10:40">10:40</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.break">Networking</p>
+                    <h3 class="session__title" data-i18n="program.d1s06.title">Pausa cafè i networking</h3>
+                    <p class="session__desc" data-i18n="program.d1s06.desc">Espai de contacte entre empreses, institucions i agents de l’ecosistema.</p>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-03T11:00">11:00</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.talk">Ponència</p>
+                    <h3 class="session__title" data-i18n="program.d1s07.title">La innovació en primera persona</h3>
+                    <p class="session__desc" data-i18n="program.d1s07.desc">Casos d’èxit d’empreses de l’ecosistema de les Illes Balears.</p>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d1s07.speaker">Modera: Xavier Nadal</span>
+                      <span class="session__role" data-i18n="program.d1s07.role">Cap de departament de projectes estratègics del Govern de les Illes Balears</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-03T12:00">12:00</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.instrument">Instruments</p>
+                    <h3 class="session__title" data-i18n="program.d1s08.title">La teva pròxima oportunitat per innovar</h3>
+                    <p class="session__desc" data-i18n="program.d1s08.desc">Instruments disponibles, cooperació tecnològica i vies d’accés als serveis.</p>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d1s08.speaker">Immaculada Salamanca</span>
+                      <span class="session__role" data-i18n="program.d1s08.role">Cap d’àrea de RDi Comunicació de la Fundació Bit</span>
+                    </p>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d1s08.speaker2">Áureo Díaz-Carrasco</span>
+                      <span class="session__role" data-i18n="program.d1s08.role2">Director ejecutivo de la Federación Española de Centros Tecnológicos</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-03T12:40">12:40</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.instrument">Instruments</p>
+                    <h3 class="session__title" data-i18n="program.d1s09.title">Unitat Acceleradora de Projectes Estratègics (UAPE)</h3>
+                    <p class="session__desc" data-i18n="program.d1s09.desc">Resultats assolits i experiència pràctica.</p>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d1s09.speaker">Direcció General de Projectes Estratègics, Fons Europeus i Simplificació Administrativa</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-03T13:00">13:00</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.ecosystem">Ecosistema</p>
+                    <h3 class="session__title" data-i18n="program.d1s10.title">Connectar talent, empreses i coneixement</h3>
+                    <p class="session__desc" data-i18n="program.d1s10.desc">Estratègia per als Hubs d’innovació de les Illes Balears: ParcBit i CentresBit.</p>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d1s10.speaker">Dani Juan</span>
+                      <span class="session__role" data-i18n="program.d1s10.role">Delegat territorial Eivissa de la Fundació Bit</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-03T13:30">13:30</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.logistics">Organització</p>
+                    <h3 class="session__title" data-i18n="program.d1s11.title">Entrega de reconeixements</h3>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-03T13:45">13:45</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.principal">Obertura</p>
+                    <h3 class="session__title" data-i18n="program.d1s12.title">Conclusions i tancament</h3>
+                    <p class="session__desc" data-i18n="program.d1s12.desc">Síntesi dels instruments presentats i indicacions pràctiques perquè les empreses identifiquin el seu pròxim pas.</p>
+                  </div>
+                </li>
+
+                <li class="session session--break">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-03T14:00">14:00</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.break">Networking</p>
+                    <h3 class="session__title" data-i18n="program.d1s13.title">Networking i finger food</h3>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+            <!-- ---------------------------- DÍA 2 ---------------------------- -->
+            <div class="tabs__panel" role="tabpanel" id="panel-d2" aria-labelledby="tab-d2" tabindex="0" data-panel="2" hidden>
+              <p class="tabs__subtitle" data-i18n="program.d2Subtitle">De la idea a la inversió: connectant talent, innovació i capital. Una jornada per descobrir oportunitats, donar visibilitat a startups i connectar projectes innovadors amb l’ecosistema inversor.</p>
+
+              <ol class="timeline" data-timeline>
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-04T08:45">08:45</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.logistics">Organització</p>
+                    <h3 class="session__title" data-i18n="program.d2s01.title">Acreditacions: conferència i fòrum d’inversió PALMA TECH’26</h3>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-04T09:15">09:15</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.instrument">Instruments</p>
+                    <h3 class="session__title" data-i18n="program.d2s02.title">De la idea al mercat: recursos per emprendre, innovar i créixer a les Illes Balears</h3>
+                    <p class="session__desc" data-i18n="program.d2s02.desc">Serveis d’acompanyament, acceleració i instruments de finançament per impulsar startups i transformar idees inovadores en projectes empresarials.</p>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d2s02.speaker">Immaculada Salamanca</span>
+                      <span class="session__role" data-i18n="program.d2s02.role">Cap d’àrea de RDi Comunicació de la Fundació Bit</span>
+                    </p>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d2s02.speaker2">ADR Balears</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-04T09:45">09:45</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.talk">Ponència</p>
+                    <h3 class="session__title" data-i18n="program.d2s03.title">Una mirada diferent a la intel·ligència artificial</h3>
+                    <p class="session__desc" data-i18n="program.d2s03.desc">Ponència: «Otra charla de IA a las 09:30 y por qué le das las gracias a una máquina».</p>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d2s03.speaker">Raquel Carrera</span>
+                      <span class="session__role" data-i18n="program.d2s03.role">Sòcia de l’espai creatiu PATIO</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="session session--break">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-04T10:45">10:45</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.break">Networking</p>
+                    <h3 class="session__title" data-i18n="program.d2s04.title">Pausa cafè i connexions amb l’ecosistema</h3>
+                    <p class="session__desc" data-i18n="program.d2s04.desc">Espai de networking entre startups, empreses, institucions i agents de l’ecosistema emprenedor.</p>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-04T11:00">11:00</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.logistics">Organització</p>
+                    <h3 class="session__title" data-i18n="program.d2s05.title">Acreditacions per participar al fòrum d’inversió</h3>
+                  </div>
+                </li>
+
+                <li class="session session--forum">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-04T11:30">11:30</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.forum">Fòrum d’inversió</p>
+                    <h3 class="session__title" data-i18n="program.d2s06.title">De l’emprenedoria a la inversió: Fòrum PALMA TECH’26</h3>
+                    <p class="session__desc" data-i18n="program.d2s06.desc">Presentació del fòrum que connecta startups inovadores de les Illes Balears amb inversors i oportunitats de finançament.</p>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d2s06.speaker">Sebastian González</span>
+                      <span class="session__role" data-i18n="program.d2s06.role">Director general d’Innovació i Transformació Digital</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="session session--forum">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-04T11:45">11:45</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.pitch">Pitches</p>
+                    <h3 class="session__title" data-i18n="program.d2s07.title">Startups en acció: presentació de projectes davant inversors</h3>
+                    <p class="session__desc" data-i18n="program.d2s07.desc">Sessió de pitches de les startups participants i lliurament del premi al projecte més votat.</p>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-04T13:45">13:45</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.roundtable">Taula rodona</p>
+                    <h3 class="session__title" data-i18n="program.d2s08.title">Què cerca un inversor? Claus per finançar i fer créixer una startup</h3>
+                    <p class="session__desc" data-i18n="program.d2s08.desc">Taula rodona sobre els criteris d’inversió, la preparació per captar capital, les oportunitats de finançament i els reptes del creixement empresarial.</p>
+                  </div>
+                </li>
+
+                <li class="session">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-04T14:15">14:15</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.closing">Cloenda</p>
+                    <h3 class="session__title" data-i18n="program.d2s09.title">Micròfon obert per als inversors</h3>
+                    <p class="session__desc" data-i18n="program.d2s09.desc">Cloenda de la jornada.</p>
+                    <p class="session__people">
+                      <span class="session__speaker" data-i18n="program.d2s09.speaker">Alejandro Sáenz de San Pedro</span>
+                      <span class="session__role" data-i18n="program.d2s09.role">Conseller d’Empresa, Autònoms i Energia</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="session session--break">
+                  <span class="session__marker" aria-hidden="true"></span>
+                  <div class="session__time"><time datetime="2026-12-04T14:30">14:30</time></div>
+                  <div class="session__content">
+                    <p class="session__type" data-i18n="program.type.break">Networking</p>
+                    <h3 class="session__title" data-i18n="program.d2s10.title">Networking i finger food</h3>
+                    <p class="session__desc" data-i18n="program.d2s10.desc">Connectant projectes i oportunitats.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <noscript>
+          <p class="notice">Activeu JavaScript per canviar entre els dos dies del programa. El contingut complet dels dos dies es troba a continuació.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============================ BLOQUE 5 — INSCRIPCIÓN ==================== -->
+    <section class="cta" id="inscriu-te">
+      <div class="cta__inner">
+        <p class="cta__eyebrow">Innovation Days 2026</p>
+        <h2 class="cta__title" data-i18n="cta.title">No oblidis inscriu-te</h2>
+        <p class="cta__lead" data-i18n="cta.lead">Escull com vulguis participar als Innovation Days 2026: com a assistent o al Fòrum d’inversió PALMA TECH’26.</p>
+        <div class="cta__actions">
+          <a class="btn btn--primary" href="https://forms.cloud.microsoft/e/FkwdHGdVYX" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaAssistant">Inscriu-te com a assistent</a>
+          <a class="btn btn--secondary" href="https://keiretsuforum.es/foros-de-inversion/foro-de-inversion-palma-tech-04-12-2026/" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaForum">Inscriu-te al Fòrum d’inversió</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================ BLOQUE 6 — FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <img class="site-footer__logos" src="images/logo-footer.jpg" width="2522" height="625" alt="Govern de les Illes Balears, Fundació BIT i ADR Balears" loading="lazy">
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" data-to-top data-i18n-attrs="aria-label:a11y.toTop" aria-label="Torna amunt" hidden>
+    <span aria-hidden="true">↑</span>
+  </button>
+</body>
+</html>
