@@ -106,7 +106,7 @@ Dos sub-bloques en la misma sección, separados por un filete:
 1. **Qué son** — eyebrow, titular, tres párrafos (qué es el evento / la pregunta que responde la edición / la organización y la Fundació BIT) y un enlace a `fundaciobit.org`. Columna lateral con la tarjeta **"Organitzen l'edició 2026"**: Govern (a través de la Fundació BIT con la colaboración de ADR Balears), Fundació BIT y Keiretsu Forum.
 2. **Descripción del evento** — parte del texto semilla ("Innovació, talent i inversió…") y lo amplía a tres párrafos: jornada del jueves (instrumentos públicos, RIS3, Turboconvo, CDTI, UAPE, hubs, casos de éxito), jornada del viernes (inversión, PALMA TECH'26, pitches, mesa redonda) y cierre (networking).
 
-Debajo, cuatro **cifras clave** verificadas contra el `.docx`: `2` jornades · `23` sessions · `10` ponents · `1` fòrum d'inversió. Los valores están **en el HTML** (`<span data-counter="23">23</span>`) y JS solo los anima: sin JS el dato es correcto.
+Debajo, cuatro **cifras clave**: `2` jornades · `16` sessions · `10` ponents · `1` fòrum d'inversió. Los valores están **en el HTML** (`<span data-counter="16">16</span>`) y JS solo los anima: sin JS el dato es correcto.
 
 ### 4.4 Programa (`<section class="program">`)
 
@@ -136,7 +136,11 @@ Solo `images/logo-footer.jpg`, centrado, con `loading="lazy"`. Fondo blanco (ima
 
 ## 5. Modelo del programa
 
-23 sesiones. Campos por sesión: `hora` (ISO + visible), `tipo`, `título`, `descripción` (opcional), `ponente` + `cargo` (opcional), segundo ponente (D1-08 y D2-02).
+**23 entradas en el timeline, de las cuales 16 son sesiones.** Campos por entrada: `hora` (ISO + visible), `tipo`, `título`, `descripción` (opcional), `ponente` + `cargo` (opcional), segundo ponente (D1-08 y D2-02).
+
+**No cuentan como sesión** (7 entradas): las inscripciones y acreditaciones (D1 09:00, D2 08:45, D2 11:00) y los momentos de pausa café / networking (D1 10:40, D1 14:00, D2 10:45, D2 14:30). Se marcan en el HTML con la clase `session--nonsession` (o `session--break` en los de pausa y networking) y se distinguen visualmente con un marcador más pequeño y hueco y el titular en tono secundario.
+
+**Sí cuentan como sesión** (16): las 10 del jueves (09:15, 09:30, 10:00, 10:20, 11:00, 12:00, 12:40, 13:00, 13:30, 13:45) y las 6 del viernes (09:15, 09:45, 11:30, 11:45, 13:45, 14:15). La *Entrega de reconeixements* (D1 13:30) cuenta como sesión: no es ni una pausa, ni un networking, ni una inscripción.
 
 **Día 1 — jueves 3 de diciembre** (13 sesiones, 09:00–14:00)
 | Hora | Contenido | Ponente |
@@ -235,7 +239,7 @@ Elementos `<a>` reales (no `<button>`): funcionan sin JS, son compartibles y los
 El contenido **nunca** queda invisible de forma permanente:
 
 - Las animaciones de entrada ocultan un elemento **solo** si JS lo ha marcado con `data-reveal-pending`, y únicamente cuando está fuera de pantalla. Si el observer no dispara, lo que está en pantalla ya es visible.
-- Los valores de los contadores están en el HTML. Si JS falla, se lee "23", no "0".
+- Los valores de los contadores están en el HTML. Si JS falla, se lee "16", no "0".
 - La única dependencia real de JS es la navegación entre pestañas.
 
 ### 7.2 Movimiento reducido
@@ -309,7 +313,7 @@ Más `theme-color` (#0246CA), `og:type/title/description/image` (← `images/her
 1. **`hero.png` no existe**: el asset es `hero.jpg`. Si en algún momento llega un `hero.png` vertical, hay que revisar el bloque 4.2 (el `background-position` y el `min-height` están calculados para un banner 3,33:1).
 2. **Wordmark vs. copy**: la imagen ya lleva el título del evento. Por eso el copy del hero se ancla abajo a la derecha, sobre la zona oscura, y el `h1` real queda visualmente oculto pero presente para lectores de pantalla y buscadores.
 3. **`transition` solo en `transform`** para el indicador de pestañas: animar `width` congelaba el ancho usado en algunos motores de headless y hacía la posición no determinista. El ancho se fija al instante; lo que se desliza es la posición.
-4. **Cifras clave verificadas contra el `.docx`**: 13 + 10 = 23 sesiones y 10 ponentes nominales únicos (Immaculada Salamanca y Sebastian González repiten en ambos días).
+4. **Cifras clave verificadas contra el `.docx`**: 23 entradas en el programa (13 + 10) → **16 sesiones** (10 + 6). Las 7 restantes son inscripciones, acreditaciones, pausas café y networking, que no se cuentan como sesión. 10 ponentes nominales únicos (Immaculada Salamanca y Sebastian González repiten en ambos días).
 5. **`hero.note` eliminado**: la frase "Accés gratuït / Acceso gratuito" no está verificada en ninguna fuente, así que no se publica.
 6. **Texto de la charla de IA**: se mantiene en castellano en ambos idiomas, porque es el título literal de la conferencia según el `.docx`.
 7. **El CTA reutiliza las claves del hero** (`hero.ctaAssistant`, `hero.ctaForum`) en lugar de crear claves nuevas. Consecuencia: cambiar el texto o la URL de un botón los cambia en los dos sitios, y no puede haber dos traducciones divergentes del mismo CTA.

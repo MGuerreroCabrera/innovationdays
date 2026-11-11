@@ -82,7 +82,7 @@ window.InnovationDaysI18n = {
     'program.eyebrow': 'Agenda',
     'program.title': 'Programa',
     'program.intro':
-      'Dos dies, vint-i-tres sessions i una agenda construïda al voltant de dos objectius: coneixement pràctic i contacte directe.',
+      'Dos dies, setze sessions i una agenda construïda al voltant de dos objectius: coneixement pràctic i contacte directe.',
     'program.tablist': 'Programa per dies',
     'program.tab1Day': 'Dijous 3',
     'program.tab1Date': '3 de desembre',
@@ -93,6 +93,7 @@ window.InnovationDaysI18n = {
     'program.d2Subtitle':
       'De la idea a la inversió: connectant talent, innovació i capital. Una jornada per descobrir oportunitats, donar visibilitat a startups i connectar projectes innovadors amb l’ecosistema inversor.',
     'program.type.logistics': 'Organització',
+    'program.type.ceremony': 'Acte institucional',
     'program.type.principal': 'Obertura',
     'program.type.instrument': 'Instruments',
     'program.type.ecosystem': 'Ecosistema',
@@ -259,7 +260,7 @@ window.InnovationDaysI18n = {
     'program.eyebrow': 'Agenda',
     'program.title': 'Programa',
     'program.intro':
-      'Dos días, veintitrés sesiones y una agenda construida en torno a dos objetivos: conocimiento práctico y contacto directo.',
+      'Dos días, dieciséis sesiones y una agenda construida en torno a dos objetivos: conocimiento práctico y contacto directo.',
     'program.tablist': 'Programa por días',
     'program.tab1Day': 'Jueves 3',
     'program.tab1Date': '3 de diciembre',
@@ -270,6 +271,7 @@ window.InnovationDaysI18n = {
     'program.d2Subtitle':
       'De la idea a la inversión: conectando talento, innovación y capital. Una jornada para descubrir oportunidades, dar visibilidad a las startups y conectar proyectos innovadores con el ecosistema inversor.',
     'program.type.logistics': 'Organización',
+    'program.type.ceremony': 'Acto institucional',
     'program.type.principal': 'Apertura',
     'program.type.instrument': 'Instrumentos',
     'program.type.ecosystem': 'Ecosistema',

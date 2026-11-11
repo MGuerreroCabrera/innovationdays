@@ -990,6 +990,28 @@ button {
   border-color: var(--c-aqua);
 }
 
+/* Momentos que NO son sesiones: inscripciones, acreditaciones, pausas café y
+   networking. Se distinguen del contenido con un marcador más pequeño y hueco,
+   y con el titular en tono secundario. */
+.session--nonsession .session__marker,
+.session--break .session__marker {
+  width: 9px;
+  height: 9px;
+  margin-top: 0.78rem;
+  border-width: 2px;
+  background: var(--c-surface);
+}
+
+.session--nonsession .session__marker {
+  border-color: var(--c-border-strong);
+}
+
+.session--nonsession .session__title,
+.session--break .session__title {
+  color: var(--c-muted);
+  font-weight: 400;
+}
+
 .session--forum .session__marker {
   border-color: var(--c-sky);
   background: var(--c-sky);
