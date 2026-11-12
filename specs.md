@@ -19,9 +19,9 @@ Documento de trabajo interno. El idioma del documento es español; el idioma del
 4. Servir el contenido en la lengua del visitante (ca / es).
 
 **Fuentes de contenido.**
-- `docs/programa-definitivo.docx` → **fuente oficial del programa** (23 entradas: 13 el jueves + 10 el viernes, 9 ponentes nominales). Sustituye a `docs/programa.docx`, que queda como histórico.
+- `docs/programa-final.docx` → **fuente oficial del programa** (23 entradas: 13 el jueves + 10 el viernes, 9 ponentes nominales). Sustituye a `docs/programa-definitivo.docx`, que queda como histórico junto a `docs/programa.docx`.
 - `fundaciobit.org` → misión, objetivos y servicios de la Fundació BIT; definición del ParcBIT; contexto del ecosistema.
-- Nota: el `.docx` definitivo sitúa el Foro PALMA TECH'26 a las 11:00 (los medios citaban 10:30–14:30). **Se sigue el `.docx`**.
+- Nota: el `.docx` final sitúa el Foro PALMA TECH'26 a las 11:00 (los medios citaban 10:30–14:30). **Se sigue el `.docx`**.
 
 ---
 
@@ -117,7 +117,7 @@ Debajo, cuatro **cifras clave**: `2` jornades · `17` sessions · `9` ponents ·
 - `role="tablist"` con dos pestañas: *Dijous 3 / 3 de desembre* y *Divendres 4 / 4 de desembre*. Indicador inferior con degradado azul→aqua que se reposiciona con `transform`.
 - Paneles `role="tabpanel"` con `tabindex="0"`. El panel inactivo lleva el atributo `hidden`.
 - Cada sesión es un `<li class="session">` del `<ol class="timeline">` con: hora (`<time datetime="2026-12-03T09:15">`), etiqueta de tipo, titular, descripción y ponente + cargo.
-- Tipos: `logistics`, `principal`, `instrument`, `ecosystem`, `talk`, `break`, `forum`, `pitch`, `roundtable`, `openmic`, `closing` (etiqueta propia en cada idioma).
+- Tipos: `logistics`, `principal`, `instrument`, `informative`, `talk`, `break`, `forum`, `pitch`, `roundtable`, `openmic`, `closing` (etiqueta propia en cada idioma). `informative` ("Sessió informativa" / "Sesión informativa") y `talk` ("Ponència" / "Ponencia") reproducen la clasificación que hace el `.docx` final de cada bloque: charla o sesión informativa.
 - Línea de tiempo: traza vertical con degradado cuyo relleno (`--progress`) se calcula según la posición del scroll.
 - Deep link: `#programa-d1` / `#programa-d2` activan la pestaña correspondiente (y `history.replaceState` la mantiene al cambiar de pestaña).
 
