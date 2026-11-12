@@ -137,38 +137,12 @@
   }
 
   /* ------------------------------------------------------------------ */
-  /* Hero: parallax sobre el fondo                                        */
+  /* Hero: sin parallax                                                   */
   /* ------------------------------------------------------------------ */
-  function initParallax() {
-    var hero = document.querySelector('.hero');
-    var media = document.querySelector('[data-hero-media]');
-    if (!hero || !media || reduceMotion.matches) return;
-
-    var ticking = false;
-
-    function update() {
-      var rect = hero.getBoundingClientRect();
-      if (rect.bottom > 0 && rect.top < window.innerHeight) {
-        var offset = rect.top * 0.16;
-        media.style.transform =
-          'translate3d(0,' + offset.toFixed(2) + 'px,0) scale(1.08)';
-      }
-      ticking = false;
-    }
-
-    window.addEventListener(
-      'scroll',
-      function () {
-        if (!ticking) {
-          ticking = true;
-          window.requestAnimationFrame(update);
-        }
-      },
-      { passive: true }
-    );
-    window.addEventListener('resize', update);
-    update();
-  }
+  /* El fondo del hero se dimensiona con la proporción real del archivo
+     (aspect-ratio) y se muestra entero. Cualquier transform sobre la
+     capa (scale/translate) recortaría la imagen, así que aquí no hay
+     nada que animar: la banda es estática. */
 
   /* ------------------------------------------------------------------ */
   /* Animaciones de entrada                                               */
@@ -568,7 +542,6 @@
 
     initHeader();
     initDrawer();
-    initParallax();
     initReveal();
     initCounters();
     initProgram();

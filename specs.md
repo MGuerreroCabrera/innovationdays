@@ -79,14 +79,28 @@ Reglas de uso:
 
 - Fondo: `images/hero.jpg` en `.hero__media` (decorativo, `aria-hidden`).
 - El `h1` ("Innovation Days 2026") es visualmente oculto: el wordmark real es el de la imagen.
-- **Los CTAs van abajo a la derecha**, sobre la zona oscura de la imagen, para no colisionar con el wordmark impreso en la banda izquierda. `.hero__inner` es un flex con `justify-content: flex-end`.
+- **La imagen se ve COMPLETA a cualquier ancho.** El asset es un banner de 2522×757 (3,33:1), así que:
+  - `.hero__media` lleva `aspect-ratio: 2522 / 757` → la banda tiene siempre la proporción real del archivo.
+  - `background-size: 100% auto` → **nunca `cover`**. `cover` recortaba el 79,6% de la imagen a 390px de ancho y el 42,4% a 768px; solo encajaba a partir de ~1333px.
+  - En ≥768px la banda vuelve a flotar (`position: absolute; inset: 0`) y el alto del hero lo fija `aspect-ratio: 2522 / 757` sobre `.hero`, con `min-height: min-content` para que el copy nunca se recorte.
+- Responsive:
+  - `< 768px`: la banda va **en flujo** (117px de alto a 390px) y el copy va **debajo**, sobre el fondo oscuro. A 390px la imagen completa no da altura para los CTA encima.
+  - `≥ 768px`: la banda flota y el copy se ancla **a la derecha**, limitado al 47% del ancho (el wordmark viene impreso en el 48,5% izquierdo de la imagen). Si los dos CTA no caben en una fila, envuelven.
+- **Los CTAs van abajo a la derecha**, sobre la zona oscura de la imagen, para no colisionar con el wordmark impreso en la banda izquierda.
 - CTAs: `Inscriu-te com a assistent` / `Inscriu-te al Fòrum d’inversió` (ca) y `Inscríbete como asistente` / `Inscríbete al Foro de inversión` (es), `border-radius: 5px`, `target="_blank"` + `rel="noopener noreferrer"`.
 - `.hero__scrim` aplica dos degradados (superior e inferior) para garantizar el contraste del texto blanco.
-- Responsive:
-  - `< 768px`: `min-height: clamp(460px, 68vh, 620px)`, `background-position: 82% center` (se ve el blob 3D), CTAs apilados a ancho completo.
-  - `768–1199px`: `min-height: clamp(400px, 30.02vw, 720px)`, `background-position: 25% center` (prioriza el wordmark).
-  - `≥ 1200px`: `background-position: center` → **cero recorte**; el ancho natural coincide con la altura impuesta por `30.02vw`.
-- Parallax: `.hero__media` recibe `translate3d(0, y*0.16, 0) scale(1.08)` con `rAF` y listener pasivo. Desactivado con `prefers-reduced-motion`.
+- **Sin parallax**: cualquier `transform` sobre la capa (`scale`/`translate`) recortaría la imagen, así que la banda es estática.
+
+**Enlaces de los CTAs** (destinos externos, se abren en pestaña nueva):
+
+| Botón | Clave i18n | URL | Estado |
+|---|---|---|---|
+| Inscríbete como asistente / Inscriu-te com a assistent | `hero.ctaAssistant` | `https://forms.cloud.microsoft/e/FkwdHGdVYX` | ✅ Configurada |
+| Inscríbete al Foro de inversión / Inscriu-te al Fòrum d’inversió | `hero.ctaForum` | `https://keiretsuforum.es/foros-de-inversion/foro-de-inversion-palma-tech-04-12-2026/` | ✅ Configurada |
+
+Ambos deben mantener `target="_blank"` y `rel="noopener noreferrer"` (apertura en pestaña nueva + aislamiento de `window.opener`). El primero es un formulario de Microsoft Forms; el segundo, la página del Foro de Inversión PALMA TECH'26 en keiretsuforum.es.
+
+> El bloque CTA (§4.5) **reutiliza los mismos dos enlaces y las mismas claves i18n** (`hero.ctaAssistant` y `hero.ctaForum`): cambiar una URL en un sitio la cambia en los dos.
 
 ### 4.3 Qué son + Descripción (`<section class="about">`)
 
@@ -214,14 +228,13 @@ Elementos `<a>` reales (no `<button>`): funcionan sin JS, son compartibles y los
 |---|---|---|
 | 1 | Cabecera condensada al hacer scroll | listener pasivo + `requestAnimationFrame` |
 | 2 | Drawer móvil | `aria-expanded`, focus trap, `Esc`, scroll-lock del body, cierre al redimensionar a ≥900px |
-| 3 | Parallax del hero | `translate3d` + `scale(1.08)` en scroll |
-| 4 | Reveal on scroll escalonado | `IntersectionObserver` + retardo `--reveal-delay` |
-| 5 | Contadores de las 4 cifras | `IntersectionObserver` + `requestAnimationFrame` con easing cúbico |
-| 6 | Pestañas del programa | `role="tablist"`, indicador deslizante, ←/→/Home/End, `aria-selected`, deep link, `sessionStorage` no requerido |
-| 7 | Línea de progreso del timeline | cálculo de `--progress` sobre el scroll |
-| 8 | Scrollspy del nav | `IntersectionObserver` con banda central → `aria-current` |
-| 9 | Botón "volver arriba" | aparece pasado el hero |
-| 10 | Cambio de idioma | `I18n.setLang()` + evento `i18n:change` (recalcula el indicador de pestañas) |
+| 3 | Reveal on scroll escalonado | `IntersectionObserver` + retardo `--reveal-delay` |
+| 4 | Contadores de las 4 cifras | `IntersectionObserver` + `requestAnimationFrame` con easing cúbico |
+| 5 | Pestañas del programa | `role="tablist"`, indicador deslizante, ←/→/Home/End, `aria-selected`, deep link, `sessionStorage` no requerido |
+| 6 | Línea de progreso del timeline | cálculo de `--progress` sobre el scroll |
+| 7 | Scrollspy del nav | `IntersectionObserver` con banda central → `aria-current` |
+| 8 | Botón "volver arriba" | aparece pasado el hero |
+| 9 | Cambio de idioma | `I18n.setLang()` + evento `i18n:change` (recalcula el indicador de pestañas) |
 
 ### 7.1 Fail-safe (decisión de diseño clave)
 
@@ -233,7 +246,7 @@ El contenido **nunca** queda invisible de forma permanente:
 
 ### 7.2 Movimiento reducido
 
-`prefers-reduced-motion: reduce` desactiva parallax, contadores, animaciones de entrada y transiciones; el scroll pasa a ser instantáneo.
+`prefers-reduced-motion: reduce` desactiva contadores, animaciones de entrada y transiciones; el scroll pasa a ser instantáneo.
 
 ---
 
@@ -275,8 +288,8 @@ Más `theme-color` (#0246CA), `og:type/title/description/image` (← `images/her
 - [x] Contenido nunca invisible de forma permanente (§7.1).
 
 **Verificado en navegador**
-- Chrome (headless) y Firefox (headless): render, consola sin errores, sin overflow horizontal a 390 / 768 / 1024 / 1440.
-- Cambio de idioma CA↔ES: 33 aserciones automáticas (texto, `<html lang>`, `<title>`, meta description, programa, ponentes, cifras, URL, `localStorage`, estado de pestañas preservado, teclado, drawer).
+- Chrome (headless): render, consola sin errores, sin overflow horizontal a 500 / 768 / 1024 / 1440 / 1920 (`scrollWidth == clientWidth` en todas). La banda del hero coincide exactamente con la caja (`2522 × 757`): **la imagen se ve completa, sin recorte**.
+- Cambio de idioma CA↔ES: paridad de claves (`I18n.reportMissingKeys()` sin avisos; 126 claves por idioma, 123 en el HTML + 3 de uso programático).
 - Deep link `#programa-d2` → activa la pestaña del viernes.
 - Programa: 13 entradas el jueves (10 sesiones) y 10 el viernes (7 sesiones); horas y `<time datetime>` coherentes con el `.docx` definitivo.
 
@@ -300,7 +313,7 @@ Más `theme-color` (#0246CA), `og:type/title/description/image` (← `images/her
 
 ## 11. Decisiones y notas de implementación
 
-1. **`hero.png` no existe**: el asset es `hero.jpg`. Si en algún momento llega un `hero.png` vertical, hay que revisar el bloque 4.2 (el `background-position` y el `min-height` están calculados para un banner 3,33:1).
+1. **`hero.png` no existe**: el asset es `hero.jpg`. Si en algún momento llega un `hero.png` vertical, hay que revisar el bloque 4.2 (la banda se dimensiona con `aspect-ratio: 2522 / 757`, atada a la proporción real del archivo).
 2. **Wordmark vs. copy**: la imagen ya lleva el título del evento. Por eso el copy del hero se ancla abajo a la derecha, sobre la zona oscura, y el `h1` real queda visualmente oculto pero presente para lectores de pantalla y buscadores.
 3. **`transition` solo en `transform`** para el indicador de pestañas: animar `width` congelaba el ancho usado en algunos motores de headless y hacía la posición no determinista. El ancho se fija al instante; lo que se desliza es la posición.
 4. **Cifras clave verificadas contra el `.docx` definitivo**: 23 entradas en el programa (13 + 10) → **17 sesiones** (10 + 7). Las 6 restantes son inscripciones, acreditaciones, pausas café y networking, que no se cuentan como sesión. **9 ponentes nominales únicos** (Immaculada Salamanca aparece en los dos días). El `.docx` definitivo deja de nombrar a Áureo Díaz-Carrasco (D1 12:00) y a Sebastian González en el Foro (D2 11:00), y atribuye la sesión de las 09:15 del viernes a Fundació Bit y ADR Balears.

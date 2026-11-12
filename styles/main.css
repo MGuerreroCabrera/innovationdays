@@ -630,25 +630,34 @@ button {
 
 /* 8. Hero ================================================================ */
 
+/* La imagen del hero es un banner de 2522×757 (3,33:1). Para que se vea
+   COMPLETA en cualquier pantalla, la banda se dimensiona con la proporción
+   real del archivo (aspect-ratio) y la imagen nunca se recorta
+   (background-size: 100% auto). Nada de cover: cover recortaba el 79,6% de
+   la imagen a 390px de ancho y solo encajaba a partir de ~1333px. */
+
 .hero {
   position: relative;
   isolation: isolate;
   display: flex;
-  align-items: flex-end;
-  min-height: clamp(460px, 68vh, 620px);
+  flex-direction: column;
+  justify-content: flex-end;
   overflow: hidden;
   background: #1C0E05;
 }
 
+/* Móvil: la banda va en flujo y el contenido debajo. A 390px la imagen
+   completa solo mide 117px de alto: los CTA no caben encima. */
 .hero__media {
-  position: absolute;
-  inset: 0;
+  position: relative;
   z-index: -2;
+  flex: none;
+  width: 100%;
+  aspect-ratio: 2522 / 757;
   background-image: url("../images/hero.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 82% center;
-  will-change: transform;
+  background-size: 100% auto;
+  background-position: center top;
 }
 
 .hero__scrim {
@@ -701,30 +710,29 @@ button {
 }
 
 @media (min-width: 768px) {
+  /* Escritorio: la banda vuelve a flotar y el alto del hero lo fija la
+     propia imagen. min-height: min-content impide que el copy se recorte
+     si algún día necesita más espacio que la banda. */
   .hero {
-    min-height: clamp(400px, 30.02vw, 720px);
+    aspect-ratio: 2522 / 757;
+    min-height: min-content;
   }
 
   .hero__media {
-    background-position: 25% center;
-  }
-}
-
-@media (min-width: 900px) {
-  .hero__content {
+    position: absolute;
+    inset: 0;
     width: auto;
+    height: 100%;
+    aspect-ratio: auto;
+  }
+
+  /* El wordmark viene impreso en la banda, en su 48,5% izquierdo: el copy
+     se ancla a la derecha y se limita a la mitad derecha para no pisarlo.
+     Si los dos CTA no caben en una fila, envuelven. */
+  .hero__content {
+    width: 47%;
     justify-items: end;
     text-align: right;
-  }
-
-  .hero__actions {
-    flex-wrap: nowrap;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hero__media {
-    background-position: center;
   }
 }
 
@@ -1340,6 +1348,14 @@ button {
 
   .hero {
     min-height: auto;
+    aspect-ratio: auto;
+  }
+
+  .hero__media {
+    position: static;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2522 / 757;
   }
 
   body {
