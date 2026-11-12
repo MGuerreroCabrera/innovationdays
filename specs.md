@@ -19,9 +19,9 @@ Documento de trabajo interno. El idioma del documento es español; el idioma del
 4. Servir el contenido en la lengua del visitante (ca / es).
 
 **Fuentes de contenido.**
-- `docs/programa.docx` → programa de los dos días (13 + 10 sesiones, 10 ponentes nominales).
+- `docs/programa-definitivo.docx` → **fuente oficial del programa** (23 entradas: 13 el jueves + 10 el viernes, 9 ponentes nominales). Sustituye a `docs/programa.docx`, que queda como histórico.
 - `fundaciobit.org` → misión, objetivos y servicios de la Fundació BIT; definición del ParcBIT; contexto del ecosistema.
-- Nota: los medios citan el Foro PALMA TECH'26 como 10:30–14:30; el `.docx` lo sitúa a las 11:30. **Se sigue el `.docx`**, que es la fuente oficial del programa.
+- Nota: el `.docx` definitivo sitúa el Foro PALMA TECH'26 a las 11:00 (los medios citaban 10:30–14:30). **Se sigue el `.docx`**.
 
 ---
 
@@ -88,17 +88,6 @@ Reglas de uso:
   - `≥ 1200px`: `background-position: center` → **cero recorte**; el ancho natural coincide con la altura impuesta por `30.02vw`.
 - Parallax: `.hero__media` recibe `translate3d(0, y*0.16, 0) scale(1.08)` con `rAF` y listener pasivo. Desactivado con `prefers-reduced-motion`.
 
-**Enlaces de los CTAs** (destinos externos, se abren en pestaña nueva):
-
-| Botón | Clave i18n | URL | Estado |
-|---|---|---|---|
-| Inscríbete como asistente / Inscriu-te com a assistent | `hero.ctaAssistant` | `https://forms.cloud.microsoft/e/FkwdHGdVYX` | ✅ Configurada |
-| Inscríbete al Foro de inversión / Inscriu-te al Fòrum d’inversió | `hero.ctaForum` | `https://keiretsuforum.es/foros-de-inversion/foro-de-inversion-palma-tech-04-12-2026/` | ✅ Configurada |
-
-Ambos deben mantener `target="_blank"` y `rel="noopener noreferrer"` (apertura en pestaña nueva + aislamiento de `window.opener`). El primero es un formulario de Microsoft Forms; el segundo, la página del Foro de Inversión PALMA TECH'26 en keiretsuforum.es.
-
-> El bloque CTA (§4.5) **reutiliza los mismos dos enlaces y las mismas claves i18n** (`hero.ctaAssistant` y `hero.ctaForum`): cambiar una URL en un sitio la cambia en los dos.
-
 ### 4.3 Qué son + Descripción (`<section class="about">`)
 
 Dos sub-bloques en la misma sección, separados por un filete:
@@ -106,14 +95,14 @@ Dos sub-bloques en la misma sección, separados por un filete:
 1. **Qué son** — eyebrow, titular, tres párrafos (qué es el evento / la pregunta que responde la edición / la organización y la Fundació BIT) y un enlace a `fundaciobit.org`. Columna lateral con la tarjeta **"Organitzen l'edició 2026"**: Govern (a través de la Fundació BIT con la colaboración de ADR Balears), Fundació BIT y Keiretsu Forum.
 2. **Descripción del evento** — parte del texto semilla ("Innovació, talent i inversió…") y lo amplía a tres párrafos: jornada del jueves (instrumentos públicos, RIS3, Turboconvo, CDTI, UAPE, hubs, casos de éxito), jornada del viernes (inversión, PALMA TECH'26, pitches, mesa redonda) y cierre (networking).
 
-Debajo, cuatro **cifras clave**: `2` jornades · `16` sessions · `10` ponents · `1` fòrum d'inversió. Los valores están **en el HTML** (`<span data-counter="16">16</span>`) y JS solo los anima: sin JS el dato es correcto.
+Debajo, cuatro **cifras clave**: `2` jornades · `17` sessions · `9` ponents · `1` fòrum d'inversió. Los valores están **en el HTML** (`<span data-counter="17">17</span>`) y JS solo los anima: sin JS el dato es correcto.
 
 ### 4.4 Programa (`<section class="program">`)
 
 - `role="tablist"` con dos pestañas: *Dijous 3 / 3 de desembre* y *Divendres 4 / 4 de desembre*. Indicador inferior con degradado azul→aqua que se reposiciona con `transform`.
 - Paneles `role="tabpanel"` con `tabindex="0"`. El panel inactivo lleva el atributo `hidden`.
 - Cada sesión es un `<li class="session">` del `<ol class="timeline">` con: hora (`<time datetime="2026-12-03T09:15">`), etiqueta de tipo, titular, descripción y ponente + cargo.
-- Tipos: `logistics`, `principal`, `instrument`, `ecosystem`, `talk`, `break`, `forum`, `pitch`, `roundtable`, `closing` (etiqueta propia en cada idioma).
+- Tipos: `logistics`, `principal`, `instrument`, `ecosystem`, `talk`, `break`, `forum`, `pitch`, `roundtable`, `openmic`, `closing` (etiqueta propia en cada idioma).
 - Línea de tiempo: traza vertical con degradado cuyo relleno (`--progress`) se calcula según la posición del scroll.
 - Deep link: `#programa-d1` / `#programa-d2` activan la pestaña correspondiente (y `history.replaceState` la mantiene al cambiar de pestaña).
 
@@ -136,13 +125,13 @@ Solo `images/logo-footer.jpg`, centrado, con `loading="lazy"`. Fondo blanco (ima
 
 ## 5. Modelo del programa
 
-**23 entradas en el timeline, de las cuales 16 son sesiones.** Campos por entrada: `hora` (ISO + visible), `tipo`, `título`, `descripción` (opcional), `ponente` + `cargo` (opcional), segundo ponente (D1-08 y D2-02).
+**23 entradas en el timeline, de las cuales 17 son sesiones.** Campos por entrada: `hora` (ISO + visible), `tipo`, `título`, `descripción` (opcional; D2-04 tiene dos), `ponente` + `cargo` (opcional), segundo ponente (D2-02). Las claves `program.d1sNN` / `program.d2sNN` siguen el orden cronológico de cada día.
 
-**No cuentan como sesión** (7 entradas): las inscripciones y acreditaciones (D1 09:00, D2 08:45, D2 11:00) y los momentos de pausa café / networking (D1 10:40, D1 14:00, D2 10:45, D2 14:30). Se marcan en el HTML con la clase `session--nonsession` (o `session--break` en los de pausa y networking) y se distinguen visualmente con un marcador más pequeño y hueco y el titular en tono secundario.
+**No cuentan como sesión** (6 entradas): las inscripciones y acreditaciones (D1 09:00, D2 08:45) y los momentos de pausa café / networking (D1 10:40, D1 14:00, D2 10:30, D2 14:30). Se marcan en el HTML con la clase `session--nonsession` (o `session--break` en los de pausa y networking) y se distinguen visualmente con un marcador más pequeño y hueco y el titular en tono secundario.
 
-**Sí cuentan como sesión** (16): las 10 del jueves (09:15, 09:30, 10:00, 10:20, 11:00, 12:00, 12:40, 13:00, 13:30, 13:45) y las 6 del viernes (09:15, 09:45, 11:30, 11:45, 13:45, 14:15). La *Entrega de reconeixements* (D1 13:30) cuenta como sesión: no es ni una pausa, ni un networking, ni una inscripción.
+**Sí cuentan como sesión** (17): las 10 del jueves (09:15, 09:30, 10:00, 10:20, 11:00, 12:00, 12:40, 13:00, 13:30, 13:45) y las 7 del viernes (09:15, 09:30, 11:00, 11:15, 13:15, 13:50, 14:20). La *Entrega de reconeixements* (D1 13:30) cuenta como sesión: no es ni una pausa, ni un networking, ni una inscripción.
 
-**Día 1 — jueves 3 de diciembre** (13 sesiones, 09:00–14:00)
+**Día 1 — jueves 3 de diciembre** (13 entradas, 10 sesiones, 09:00–14:00)
 | Hora | Contenido | Ponente |
 |---|---|---|
 | 09:00 | Inscripcions | — |
@@ -150,30 +139,30 @@ Solo `images/logo-footer.jpg`, centrado, con `loading="lazy"`. Fondo blanco (ima
 | 09:30 | RIS3 2027–2034 | Sebastian González |
 | 10:00 | Turboconvo | Josué Díaz |
 | 10:20 | CDTI | Pilar González |
-| 10:40 | Pausa cafè i networking | — |
+| 10:40 | Pausa per al cafè i treball en xarxa | — |
 | 11:00 | La innovació en primera persona | Modera: Xavier Nadal |
-| 12:00 | La teva pròxima oportunitat per innovar | Immaculada Salamanca · Áureo Díaz-Carrasco |
+| 12:00 | La teva pròxima oportunitat per innovar | Immaculada Salamanca |
 | 12:40 | UAPE | DG Proyectos Estratégicos |
-| 13:00 | Hubs d'innovació | Dani Juan |
+| 13:00 | Focus d'innovació (ParcBit i centres Bit) | Dani Juan |
 | 13:30 | Entrega de reconeixements | — |
-| 13:45 | Conclusions i tancament | — |
-| 14:00 | Networking i finger food | — |
+| 13:45 | Conclusions i cloenda | — |
+| 14:00 | Treball en xarxa i finger food | — |
 
-**Día 2 — viernes 4 de diciembre** (10 sesiones, 08:45–14:30)
+**Día 2 — viernes 4 de diciembre** (10 entradas, 7 sesiones, 08:45–14:30)
 | Hora | Contenido | Ponente |
 |---|---|---|
 | 08:45 | Acreditacions PALMA TECH'26 | — |
-| 09:15 | De la idea al mercat | Immaculada Salamanca · ADR Balears |
-| 09:45 | Una mirada diferent a la IA | Raquel Carrera |
-| 10:45 | Pausa cafè | — |
-| 11:00 | Acreditacions fòrum | — |
-| 11:30 | Fòrum PALMA TECH'26 | Sebastian González |
-| 11:45 | Startups en acció (pitches) | — |
-| 13:45 | Què cerca un inversor? | Taula rodona |
-| 14:15 | Micròfon obert · cloenda | Alejandro Sáenz de San Pedro |
-| 14:30 | Networking i finger food | — |
+| 09:15 | De la idea al mercat | Fundació Bit · ADR Balears |
+| 09:30 | Una mirada diferent a la IA | Raquel Carrera |
+| 10:30 | Pausa cafè + acreditacions finals pel fòrum | — |
+| 11:00 | Fòrum PALMA TECH'26 | — |
+| 11:15 | Empreses emergents en acció (pitches) | — |
+| 13:15 | Què cerca un inversor? | Taula rodona |
+| 13:50 | Micròfon obert als inversors | — |
+| 14:20 | Lliurament del premi i cloenda de la jornada | Alejandro Sáenz de San Pedro |
+| 14:30 | Treball en xarxa i finger food | — |
 
-Nombres propios que **no** se traducen: Antoni Costa, Sebastian González, Josué Díaz, Pilar González, Xavier Nadal, Immaculada Salamanca, Áureo Díaz-Carrasco, Dani Juan, Raquel Carrera, Alejandro Sáenz de San Pedro, ADR Balears, Keiretsu Forum, CDTI, RIS3, UAPE, PALMA TECH'26, ParcBit, CentresBit, PATIO, Turboconvo, Emprenbit.
+Nombres propios que **no** se traducen: Antoni Costa, Sebastian González, Josué Díaz, Pilar González, Xavier Nadal, Immaculada Salamanca, Dani Juan, Raquel Carrera, Alejandro Sáenz de San Pedro, ADR Balears, Fundació Bit, Keiretsu Forum, CDTI, RIS3, UAPE, PALMA TECH'26, ParcBit, CentresBit, PATIO, Turboconvo, ADEMA, Atalaia.
 
 ---
 
@@ -289,6 +278,7 @@ Más `theme-color` (#0246CA), `og:type/title/description/image` (← `images/her
 - Chrome (headless) y Firefox (headless): render, consola sin errores, sin overflow horizontal a 390 / 768 / 1024 / 1440.
 - Cambio de idioma CA↔ES: 33 aserciones automáticas (texto, `<html lang>`, `<title>`, meta description, programa, ponentes, cifras, URL, `localStorage`, estado de pestañas preservado, teclado, drawer).
 - Deep link `#programa-d2` → activa la pestaña del viernes.
+- Programa: 13 entradas el jueves (10 sesiones) y 10 el viernes (7 sesiones); horas y `<time datetime>` coherentes con el `.docx` definitivo.
 
 ---
 
@@ -313,7 +303,7 @@ Más `theme-color` (#0246CA), `og:type/title/description/image` (← `images/her
 1. **`hero.png` no existe**: el asset es `hero.jpg`. Si en algún momento llega un `hero.png` vertical, hay que revisar el bloque 4.2 (el `background-position` y el `min-height` están calculados para un banner 3,33:1).
 2. **Wordmark vs. copy**: la imagen ya lleva el título del evento. Por eso el copy del hero se ancla abajo a la derecha, sobre la zona oscura, y el `h1` real queda visualmente oculto pero presente para lectores de pantalla y buscadores.
 3. **`transition` solo en `transform`** para el indicador de pestañas: animar `width` congelaba el ancho usado en algunos motores de headless y hacía la posición no determinista. El ancho se fija al instante; lo que se desliza es la posición.
-4. **Cifras clave verificadas contra el `.docx`**: 23 entradas en el programa (13 + 10) → **16 sesiones** (10 + 6). Las 7 restantes son inscripciones, acreditaciones, pausas café y networking, que no se cuentan como sesión. 10 ponentes nominales únicos (Immaculada Salamanca y Sebastian González repiten en ambos días).
+4. **Cifras clave verificadas contra el `.docx` definitivo**: 23 entradas en el programa (13 + 10) → **17 sesiones** (10 + 7). Las 6 restantes son inscripciones, acreditaciones, pausas café y networking, que no se cuentan como sesión. **9 ponentes nominales únicos** (Immaculada Salamanca aparece en los dos días). El `.docx` definitivo deja de nombrar a Áureo Díaz-Carrasco (D1 12:00) y a Sebastian González en el Foro (D2 11:00), y atribuye la sesión de las 09:15 del viernes a Fundació Bit y ADR Balears.
 5. **`hero.note` eliminado**: la frase "Accés gratuït / Acceso gratuito" no está verificada en ninguna fuente, así que no se publica.
 6. **Texto de la charla de IA**: se mantiene en castellano en ambos idiomas, porque es el título literal de la conferencia según el `.docx`.
 7. **El CTA reutiliza las claves del hero** (`hero.ctaAssistant`, `hero.ctaForum`) en lugar de crear claves nuevas. Consecuencia: cambiar el texto o la URL de un botón los cambia en los dos sitios, y no puede haber dos traducciones divergentes del mismo CTA.
