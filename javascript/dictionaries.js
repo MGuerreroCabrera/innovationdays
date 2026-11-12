@@ -48,13 +48,13 @@ window.InnovationDaysI18n = {
     'about.p2':
       'L’edició 2026 respon a una pregunta que es repeteix cada any: <strong>quines portes cal tocar, quin camí seguir i qui és qui</strong> en el món de la innovació? El programa articula la resposta en dos eixos: els instruments que permeten transformar una idea en un projecte viable, i l’accés al capital per fer-lo créixer.',
     'about.p3':
-      'L’organització correspon al <strong>Govern de les Illes Balears</strong>, a través de l’ADR Balears, i a la <strong>Fundació Balear d’Innovació i Tecnologia</strong>, que gestiona el ParcBit i el CentreBit Menorca. La Fundació BIT és una entitat pública sense ànim de lucre dependent del Govern: executa les estratègies d’R+D+I, dona suport a les empreses i inversors de base tecnològica en totes les fases del seu cicle de vida i promou la participació del teixit empresarial en convocatories de finançament autonòmiques, nacionals i europees.',
+      'L’organització correspon al <strong>Govern de les Illes Balears</strong>, a través de l’ADR Balears, i a la <strong>Fundació Balear d’Innovació i Tecnologia</strong>, que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa. La Fundació BIT és una entitat pública sense ànim de lucre dependent del Govern: executa les estratègies d’R+D+I, dona suport a les empreses i inversors de base tecnològica en totes les fases del seu cicle de vida i promou la participació del teixit empresarial en convocatories de finançament autonòmiques, nacionals i europees.',
     'about.orgTitle': 'Organitzen l’edició 2026',
     'about.org1': 'Govern de les Illes Balears',
     'about.org1Desc':
-      'A través de la Fundació Balear d’Innovació i Tecnologia amb la col·laboració de l’ADR Balears, l’agència de desenvolupament regional.',
+      'A través de la Fundació Balear d’Innovació i Tecnologia, que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa, amb la col·laboració de l’ADR Balears, l’agència de desenvolupament regional.',
     'about.org2': 'Fundació Balear d’Innovació i Tecnologia',
-    'about.org2Desc': 'Entitat pública sense ànim de lucre que gestiona el ParcBit i el CentreBit Menorca.',
+    'about.org2Desc': 'Entitat pública sense ànim de lucre que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa.',
     'about.org3': 'Keiretsu Forum',
     'about.org3Desc': 'Xarxa internacional d’inversors privats.',
     'about.link': 'Més informació sobre la Fundació BIT',
@@ -222,14 +222,14 @@ window.InnovationDaysI18n = {
     'about.p2':
       'La edición 2026 responde a una pregunta que se repite cada año: <strong>qué puertas hay que tocar, qué camino seguir y quién es quién</strong> en el mundo de la innovación? El programa articula la respuesta en dos ejes: los instrumentos que permiten transformar una idea en un proyecto viable, y el acceso al capital para hacerlo crecer.',
     'about.p3':
-      'La organización corresponde al <strong>Govern de les Illes Balears</strong>, a través de ADR Balears, y a la <strong>Fundación Balear de Innovación y Tecnología</strong>, que gestiona el ParcBIT y el CentreBit Menorca. La Fundació BIT es una entidad pública sin ánimo de lucro dependiente del Gobierno: ejecuta las estrategias de I+D+i, da soporte a las empresas e inversores de base tecnológica en todas las fases de su ciclo de vida y promueve la participación del tejido empresarial en convocatorias de financiación autonómicas, nacionales y europeas.',
+      'La organización corresponde al <strong>Govern de les Illes Balears</strong>, a través de ADR Balears, y a la <strong>Fundación Balear de Innovación y Tecnología</strong>, que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa. La Fundació BIT es una entidad pública sin ánimo de lucro dependiente del Gobierno: ejecuta las estrategias de I+D+i, da soporte a las empresas e inversores de base tecnológica en todas las fases de su ciclo de vida y promueve la participación del tejido empresarial en convocatorias de financiación autonómicas, nacionales y europeas.',
     'about.orgTitle': 'Organizan la edición 2026',
     'about.org1': 'Govern de les Illes Balears',
     'about.org1Desc':
-      'A través de la Fundación Balear de Innovación y Tecnología con la colaboración de ADR Balears, la agencia de desarrollo regional.',
+      'A través de la Fundación Balear de Innovación y Tecnología, que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa, con la colaboración de ADR Balears, la agencia de desarrollo regional.',
     'about.org2': 'Fundación Balear de Innovación y Tecnología',
     'about.org2Desc':
-      'Entidad pública sin ánimo de lucro que gestiona el ParcBIT y el CentreBit Menorca.',
+      'Entidad pública sin ánimo de lucro que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa.',
     'about.org3': 'Keiretsu Forum',
     'about.org3Desc': 'Red internacional de inversores privados.',
     'about.link': 'Más información sobre la Fundació BIT',

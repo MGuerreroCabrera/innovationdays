@@ -107,7 +107,7 @@ Ambos deben mantener `target="_blank"` y `rel="noopener noreferrer"` (apertura e
 
 Dos sub-bloques en la misma sección, separados por un filete:
 
-1. **Qué son** — eyebrow, titular, tres párrafos (qué es el evento / la pregunta que responde la edición / la organización y la Fundació BIT) y un enlace a `fundaciobit.org`. Columna lateral con la tarjeta **"Organitzen l'edició 2026"**: Govern (a través de la Fundació BIT con la colaboración de ADR Balears), Fundació BIT y Keiretsu Forum.
+1. **Qué son** — eyebrow, titular, tres párrafos (qué es el evento / la pregunta que responde la edición / la organización y la Fundació BIT, que gestiona el ParcBit, el CentreBit Menorca y el CentreBit Eivissa) y un enlace a `fundaciobit.org`. Columna lateral con la tarjeta **"Organitzen l'edició 2026"**: Govern (a través de la Fundació BIT, que gestiona el ParcBit, el CentreBit Menorca y el CentreBit Eivissa, con la colaboración de ADR Balears), Fundació BIT y Keiretsu Forum.
 2. **Descripción del evento** — parte del texto semilla ("Innovació, talent i inversió…") y lo amplía a tres párrafos: jornada del jueves (instrumentos públicos, RIS3, Turboconvo, CDTI, UAPE, hubs, casos de éxito), jornada del viernes (inversión, PALMA TECH'26, pitches, mesa redonda) y cierre (networking).
 
 Debajo, cuatro **cifras clave**: `2` jornades · `17` sessions · `9` ponents · `1` fòrum d'inversió. Los valores están **en el HTML** (`<span data-counter="17">17</span>`) y JS solo los anima: sin JS el dato es correcto.
@@ -177,7 +177,7 @@ Solo `images/logo-footer.jpg`, centrado, con `loading="lazy"`. Fondo blanco (ima
 | 14:20 | Lliurament del premi i cloenda de la jornada | Alejandro Sáenz de San Pedro |
 | 14:30 | Treball en xarxa i finger food | — |
 
-Nombres propios que **no** se traducen: Antoni Costa, Sebastian González, Josué Díaz, Pilar González, Xavier Nadal, Immaculada Salamanca, Dani Juan, Raquel Carrera, Alejandro Sáenz de San Pedro, ADR Balears, Fundació Bit, Keiretsu Forum, CDTI, RIS3, UAPE, PALMA TECH'26, ParcBit, CentresBit, PATIO, Turboconvo, ADEMA, Atalaia.
+Nombres propios que **no** se traducen: Antoni Costa, Sebastian González, Josué Díaz, Pilar González, Xavier Nadal, Immaculada Salamanca, Dani Juan, Raquel Carrera, Alejandro Sáenz de San Pedro, ADR Balears, Fundació Bit, Keiretsu Forum, CDTI, RIS3, UAPE, PALMA TECH'26, ParcBit, CentresBit, CentreBit Menorca, CentreBit Eivissa, PATIO, Turboconvo, ADEMA, Atalaia.
 
 ---
 
