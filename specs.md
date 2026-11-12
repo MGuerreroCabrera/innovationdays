@@ -85,7 +85,8 @@ Reglas de uso:
   - En ≥768px la banda vuelve a flotar (`position: absolute; inset: 0`) y el alto del hero lo fija `aspect-ratio: 2522 / 757` sobre `.hero`, con `min-height: min-content` para que el copy nunca se recorte.
 - Responsive:
   - `< 768px`: la banda va **en flujo** (117px de alto a 390px) y el copy va **debajo**, sobre el fondo oscuro. A 390px la imagen completa no da altura para los CTA encima.
-  - `≥ 768px`: la banda flota y el copy se ancla **a la derecha**, limitado al 47% del ancho (el wordmark viene impreso en el 48,5% izquierdo de la imagen). Si los dos CTA no caben en una fila, envuelven.
+  - `768–1199px` (tablet): la banda flota y el copy se ancla **a la derecha**, limitado al 47% del ancho interior (el wordmark viene impreso en el 49,1% izquierdo de la imagen, medido sobre el asset). Si los dos CTA no caben en una fila, envuelven.
+  - `≥ 1200px` (PC y laptop): el copy vuelve a su sitio original, **abajo a la derecha y en una sola fila**, sobre la zona oscura de la imagen. A partir de 1200px la mitad derecha de la banda da para los dos botones, así que no hace falta contenerlos ni dejar que envuelvan.
 - **Los CTAs van abajo a la derecha**, sobre la zona oscura de la imagen, para no colisionar con el wordmark impreso en la banda izquierda.
 - CTAs: `Inscriu-te com a assistent` / `Inscriu-te al Fòrum d’inversió` (ca) y `Inscríbete como asistente` / `Inscríbete al Foro de inversión` (es), `border-radius: 5px`, `target="_blank"` + `rel="noopener noreferrer"`.
 - `.hero__scrim` aplica dos degradados (superior e inferior) para garantizar el contraste del texto blanco.

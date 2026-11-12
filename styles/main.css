@@ -726,13 +726,29 @@ button {
     aspect-ratio: auto;
   }
 
-  /* El wordmark viene impreso en la banda, en su 48,5% izquierdo: el copy
-     se ancla a la derecha y se limita a la mitad derecha para no pisarlo.
-     Si los dos CTA no caben en una fila, envuelven. */
+  /* Tablet (768–1199px): el wordmark viene impreso en el 48,5% izquierdo de
+     la banda, así que el copy se ancla a la derecha y se limita a la mitad
+     derecha para no pisarlo. Si los dos CTA no caben en una fila, envuelven. */
   .hero__content {
     width: 47%;
     justify-items: end;
     text-align: right;
+  }
+}
+
+/* PC y laptop (≥1200px): los CTA vuelven a su sitio original, abajo a la
+   derecha y en una sola fila, sobre la zona oscura de la imagen. A partir de
+   1200px la mitad derecha de la banda (51,4%) da para los dos botones, así
+   que no hace falta contenerlos ni dejar que envuelvan. */
+@media (min-width: 1200px) {
+  .hero__content {
+    width: auto;
+    justify-items: end;
+    text-align: right;
+  }
+
+  .hero__actions {
+    flex-wrap: nowrap;
   }
 }
 
