@@ -48,7 +48,7 @@ window.InnovationDaysI18n = {
     'about.p2':
       'L’edició 2026 respon a una pregunta que es repeteix cada any: <strong>quines portes cal tocar, quin camí seguir i qui és qui</strong> en el món de la innovació? El programa articula la resposta en dos eixos: els instruments que permeten transformar una idea en un projecte viable, i l’accés al capital per fer-lo créixer.',
     'about.p3':
-      'L’organització correspon al <strong>Govern de les Illes Balears</strong>, a través de l’ADR Balears, i a la <strong>Fundació Balear d’Innovació i Tecnologia</strong>, que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa. La Fundació BIT és una entitat pública sense ànim de lucre dependent del Govern: executa les estratègies d’R+D+I, dona suport a les empreses i inversors de base tecnològica en totes les fases del seu cicle de vida i promou la participació del teixit empresarial en convocatories de finançament autonòmiques, nacionals i europees.',
+      'L’organització correspon al <strong>Govern de les Illes Balears</strong>, a través de la <strong>Fundació Balear d’Innovació i Tecnologia</strong>, que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa, i l’<strong>ADR Balears</strong>. La Fundació BIT és una entitat pública sense ànim de lucre dependent del Govern: executa les estratègies d’R+D+I, dona suport a les empreses i inversors de base tecnològica en totes les fases del seu cicle de vida i promou la participació del teixit empresarial en convocatories de finançament autonòmiques, nacionals i europees.',
     'about.orgTitle': 'Organitzen l’edició 2026',
     'about.org1': 'Govern de les Illes Balears',
     'about.org1Desc':
@@ -222,7 +222,7 @@ window.InnovationDaysI18n = {
     'about.p2':
       'La edición 2026 responde a una pregunta que se repite cada año: <strong>qué puertas hay que tocar, qué camino seguir y quién es quién</strong> en el mundo de la innovación? El programa articula la respuesta en dos ejes: los instrumentos que permiten transformar una idea en un proyecto viable, y el acceso al capital para hacerlo crecer.',
     'about.p3':
-      'La organización corresponde al <strong>Govern de les Illes Balears</strong>, a través de ADR Balears, y a la <strong>Fundación Balear de Innovación y Tecnología</strong>, que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa. La Fundació BIT es una entidad pública sin ánimo de lucro dependiente del Gobierno: ejecuta las estrategias de I+D+i, da soporte a las empresas e inversores de base tecnológica en todas las fases de su ciclo de vida y promueve la participación del tejido empresarial en convocatorias de financiación autonómicas, nacionales y europeas.',
+      'La organización corresponde al <strong>Govern de les Illes Balears</strong>, a través de la <strong>Fundación Balear de Innovación y Tecnología</strong>, que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa, y <strong>ADR Balears</strong>. La Fundació BIT es una entidad pública sin ánimo de lucro dependiente del Gobierno: ejecuta las estrategias de I+D+i, da soporte a las empresas e inversores de base tecnológica en todas las fases de su ciclo de vida y promueve la participación del tejido empresarial en convocatorias de financiación autonómicas, nacionales y europeas.',
     'about.orgTitle': 'Organizan la edición 2026',
     'about.org1': 'Govern de les Illes Balears',
     'about.org1Desc':
