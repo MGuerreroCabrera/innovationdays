@@ -18,7 +18,7 @@ window.InnovationDaysI18n = {
   ca: {
     'meta.title': 'Innovation Days 2026 — Fundació BIT',
     'meta.description':
-      'Dos jornades per descobrir oportunitats, compartir coneixement i connectar l’ecosistema empresarial i tecnològic de les Illes Balears. 3 i 4 de desembre de 2026 al ParcBIT.',
+      'Dues jornades per descobrir oportunitats, compartir coneixement i connectar l’ecosistema empresarial i tecnològic de les Illes Balears. 3 i 4 de desembre de 2026 al ParcBIT.',
 
     'a11y.skip': 'Saltar al contingut principal',
     'a11y.openMenu': 'Obre el menú de navegació',
@@ -42,7 +42,7 @@ window.InnovationDaysI18n = {
     'hero.ctaForum': 'Necessites finançament? Apunta’t al fòrum',
 
     'about.eyebrow': 'El punt de trobada de la innovació balear',
-    'about.title': 'Dos jornades per connectar l’ecosistema innovador de les Illes Balears',
+    'about.title': 'Dues jornades per connectar l’ecosistema innovador de les Illes Balears',
     'about.p1':
       'Els <strong>Innovation Days</strong> són la cita de referència de la innovació de les Illes Balears. Dues jornades organitzades al ParcBit que posen en contacte el teixit empresarial i tecnològic de l’arxipèlag amb l’Administració pública, les institucions financeres i els inversors que hi aposten per fer créixer els projectes innovadors.',
     'about.p2':
@@ -65,7 +65,7 @@ window.InnovationDaysI18n = {
     'overview.lead':
       'Dues jornades per descobrir oportunitats, compartir coneixement i connectar l’ecosistema empresarial i tecnològic de les Illes Balears.',
     'overview.p1':
-      'El dijous 3 de desembre, la jornada se centra a <strong>Innovar a les Illes Balears</strong>: el balanç de les actuacions 2023–2026 i les oportunitats per al teixit empresarial. Hi intervenen els responsables de la RIS3 i dels principals instruments de suport —Turboconvo, CDTI i la Unitat Acceleradora de Projectes Estratègics—, els hocs d’innovació del ParcBit i els CentresBit, i casos d’èxit d’empreses de l’ecosistema que expliquen què significa innovar en primera persona.',
+      'El dijous 3 de desembre, la jornada se centra a <strong>Innovar a les Illes Balears</strong>: el balanç de les actuacions 2023–2026 i les oportunitats per al teixit empresarial. Hi intervenen els responsables de la RIS3 i dels principals instruments de suport —Turboconvo, CDTI i la Unitat Acceleradora de Projectes Estratègics—, els hubs d’innovació del ParcBit i els CentresBit, i casos d’èxit d’empreses de l’ecosistema que expliquen què significa innovar en primera persona.',
     'overview.p2':
       'El divendres 4 de desembre, la jornada gira entorn de <strong>De la idea a la inversió</strong>. La Conferència i Fòrum <strong>PALMA TECH’26</strong> connecta les empreses emergents de les Illes Balears amb inversors, les empreses emergents en acció presenten davant un panell qualificat i s’obre el micròfon per als inversors. La jornada es clou amb una taula rodona sobre criteris d’inversió i les claus per finançar i fer créixer una empresa emergent.',
     'overview.p3':
@@ -114,7 +114,7 @@ window.InnovationDaysI18n = {
     'program.d1s03.title': 'Una estratègia per transformar idees en projectes',
     'program.d1s03.desc':
       'RIS3, prioritats d’innovació i principals instruments desenvolupats durant 2023–2026 i la futura RIS3 2027–2034.',
-    'program.d1s03.speaker': 'Sebastian González',
+    'program.d1s03.speaker': 'Sebastián González',
     'program.d1s03.role': 'Director general d’Innovació i Transformació Digital',
     'program.d1s04.title':
       'Turboconvo: ajuts per a impulsar la innovació i la digitalització de les petites i mitjanes empreses de les Illes Balears',
@@ -138,7 +138,7 @@ window.InnovationDaysI18n = {
     'program.d1s08.desc':
       'Instruments disponibles (Oficina Innobal), futures convocatòries, cooperació europea i vies d’accés als serveis.',
     'program.d1s08.speaker': 'Immaculada Salamanca',
-    'program.d1s08.role': 'Jefa de l’Àrea de Comunicació i RDI de la Fundació Bit',
+    'program.d1s08.role': 'Cap de l’Àrea de Comunicació i RDI de la Fundació Bit',
     'program.d1s09.title': 'Unitat Acceleradora de Projectes Estratègics (UAPE)',
     'program.d1s09.desc': 'Resultats assolits i experiència pràctica.',
     'program.d1s09.speaker':
@@ -158,7 +158,7 @@ window.InnovationDaysI18n = {
     'program.d2s02.title':
       'De la idea al mercat: recursos per emprendre, innovar i créixer a les Illes Balears',
     'program.d2s02.desc':
-      'Serveis d’acompanyament, acceleració i instruments de finançament per impulsar empreses emergents i transformar idees inovadores en projectes empresarials.',
+      'Serveis d’acompanyament, acceleració i instruments de finançament per impulsar empreses emergents i transformar idees innovadores en projectes empresarials.',
     'program.d2s02.speaker': 'Fundació Bit',
     'program.d2s02.speaker2': 'Agència de Desenvolupament Regional de les Illes Balears (ADRBalears)',
     'program.d2s03.title': 'Una mirada diferent a la intel·ligència artificial',
@@ -244,7 +244,7 @@ window.InnovationDaysI18n = {
     'overview.p1':
       'El jueves 3 de diciembre, la jornada se centra en <strong>Innovar en las Illes Balears</strong>: el balance de las actuaciones 2023–2026 y las oportunidades para el tejido empresarial. Intervienen los responsables de la RIS3 y de los principales instrumentos de apoyo —Turboconvo, CDTI y la Unidad Acceleradora de Proyectos Estratégicos—, los hubs de innovación del ParcBIT y los CentresBit, y casos de éxito de empresas del ecosistema que explican qué significa innovar en primera persona.',
     'overview.p2':
-      'El viernes 4 de diciembre, la jornada gira en torno a <strong>De la idea a la inversión</strong>. La Conferencia y Foro <strong>PALMA TECH’26</strong> conecta las empresas emergentes de las Illes Balears con inversores, las empresas emergentes en acción piten ante un panel cualificado y se abre el micrófono para los inversores. La jornada se cierra con una mesa redonda sobre criterios de inversión y las claves para financiar y hacer crecer una empresa emergente.',
+      'El viernes 4 de diciembre, la jornada gira en torno a <strong>De la idea a la inversión</strong>. La Conferencia y Foro <strong>PALMA TECH’26</strong> conecta las empresas emergentes de las Illes Balears con inversores, las empresas emergentes en acción presentan ante un panel cualificado y se abre el micrófono para los inversores. La jornada se cierra con una mesa redonda sobre criterios de inversión y las claves para financiar y hacer crecer una empresa emergente.',
     'overview.p3':
       'Entre las dos sesiones hay tiempo para el networking: pausas café, espacios de contacto y finger food al final de cada día. Los Innovation Days son, en definitiva, el espacio donde el talento encuentra capital, las pymes encuentran instrumentos y el ecosistema se conoce de primera mano.',
 
@@ -315,7 +315,7 @@ window.InnovationDaysI18n = {
     'program.d1s08.desc':
       'Instrumentos disponibles (Oficina Innobal), futuras convocatorias, cooperación europea y vías de acceso a los servicios.',
     'program.d1s08.speaker': 'Immaculada Salamanca',
-    'program.d1s08.role': 'Jefa del Área de Comunicación y RDI de la Fundació Bit',
+    'program.d1s08.role': 'Responsable del Área de Comunicación y RDI de la Fundació Bit',
     'program.d1s09.title': 'Unidad Acceleradora de Proyectos Estratégicos (UAPE)',
     'program.d1s09.desc': 'Resultados logrados y experiencia práctica.',
     'program.d1s09.speaker':

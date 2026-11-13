@@ -154,7 +154,7 @@ Solo `images/logo-footer.jpg`, centrado, con `loading="lazy"`. Fondo blanco (ima
 |---|---|---|
 | 09:00 | Inscripcions | — |
 | 09:15 | Obertura institucional | Antoni Costa |
-| 09:30 | RIS3 2027–2034 | Sebastian González |
+| 09:30 | RIS3 2027–2034 | Sebastián González |
 | 10:00 | Turboconvo | Josué Díaz |
 | 10:20 | CDTI | Pilar González |
 | 10:40 | Pausa per al cafè i treball en xarxa | — |
@@ -180,7 +180,7 @@ Solo `images/logo-footer.jpg`, centrado, con `loading="lazy"`. Fondo blanco (ima
 | 14:20 | Lliurament del premi i cloenda de la jornada | Alejandro Sáenz de San Pedro |
 | 14:30 | Treball en xarxa i finger food | — |
 
-Nombres propios que **no** se traducen: Antoni Costa, Sebastian González, Josué Díaz, Pilar González, Xavier Nadal, Immaculada Salamanca, Dani Juan, Raquel Carrera, Alejandro Sáenz de San Pedro, ADRBalears, Fundació Bit, Keiretsu Forum, CDTI, RIS3, UAPE, PALMA TECH'26, ParcBit, CentresBit, CentreBit Menorca, CentreBit Eivissa, PATIO, Turboconvo, ADEMA, Atalaia.
+Nombres propios que **no** se traducen: Antoni Costa, Sebastián González, Josué Díaz, Pilar González, Xavier Nadal, Immaculada Salamanca, Dani Juan, Raquel Carrera, Alejandro Sáenz de San Pedro, ADRBalears, Fundació Bit, Keiretsu Forum, CDTI, RIS3, UAPE, PALMA TECH'26, ParcBit, CentresBit, CentreBit Menorca, CentreBit Eivissa, PATIO, Turboconvo, ADEMA, Atalaia.
 
 **Excepción.** El nombre completo de la ADR **sí se traduce** al castellano («Agencia de Desarrollo Regional de las Illes Balears»); solo el acrónimo `ADRBalears` se mantiene, y sin espacio, que es la grafía del `.docx` oficial.
 
@@ -325,7 +325,7 @@ Más `theme-color` (#0246CA), `og:type/title/description/image` (← `images/her
 1. **`hero.png` no existe**: el asset es `hero.jpg`. Si en algún momento llega un `hero.png` vertical, hay que revisar el bloque 4.2 (la banda se dimensiona con `aspect-ratio: 2522 / 757`, atada a la proporción real del archivo).
 2. **Wordmark vs. copy**: la imagen ya lleva el título del evento. Por eso el copy del hero se ancla abajo a la derecha, sobre la zona oscura, y el `h1` real queda visualmente oculto pero presente para lectores de pantalla y buscadores.
 3. **`transition` solo en `transform`** para el indicador de pestañas: animar `width` congelaba el ancho usado en algunos motores de headless y hacía la posición no determinista. El ancho se fija al instante; lo que se desliza es la posición.
-4. **Cifras clave verificadas contra el `.docx` definitivo**: 23 entradas en el programa (13 + 10) → **17 sesiones** (10 + 7). Las 6 restantes son inscripciones, acreditaciones, pausas café y networking, que no se cuentan como sesión. **9 ponentes nominales únicos** (Immaculada Salamanca aparece en los dos días). El `.docx` definitivo deja de nombrar a Áureo Díaz-Carrasco (D1 12:00) y a Sebastian González en el Foro (D2 11:00), y atribuye la sesión de las 09:15 del viernes a Fundació Bit y a la Agència de Desenvolupament Regional de les Illes Balears (ADRBalears).
+4. **Cifras clave verificadas contra el `.docx` definitivo**: 23 entradas en el programa (13 + 10) → **17 sesiones** (10 + 7). Las 6 restantes son inscripciones, acreditaciones, pausas café y networking, que no se cuentan como sesión. **9 ponentes nominales únicos** (Immaculada Salamanca aparece en los dos días). El `.docx` definitivo deja de nombrar a Áureo Díaz-Carrasco (D1 12:00) y a Sebastián González en el Foro (D2 11:00), y atribuye la sesión de las 09:15 del viernes a Fundació Bit y a la Agència de Desenvolupament Regional de les Illes Balears (ADRBalears).
 5. **`hero.note` eliminado**: la frase "Accés gratuït / Acceso gratuito" no está verificada en ninguna fuente, así que no se publica.
 6. **Texto de la charla de IA**: se mantiene en castellano en ambos idiomas, porque es el título literal de la conferencia según el `.docx`.
 7. **El CTA reutiliza las claves del hero** (`hero.ctaAssistant`, `hero.ctaForum`) en lugar de crear claves nuevas. Consecuencia: cambiar el texto o la URL de un botón los cambia en los dos sitios, y no puede haber dos traducciones divergentes del mismo CTA.
