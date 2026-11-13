@@ -10,10 +10,10 @@ Documento de trabajo interno. El idioma del documento es español; el idioma del
 
 **Evento.** Innovation Days 2026, dos jornadas en el ParcBit (Palma). La jornada del jueves 3 se titula *Innovar a les Illes Balears: de les idees a les oportunitats de negoci*; la del viernes 4, *De la idea a la inversió: connectant talent, innovació i capital*, e incorpora la Conferència y Foro de inversión PALMA TECH'26.
 
-**Organizan.** Govern de les Illes Balears (a través de ADR Balears), Fundació BIT y Keiretsu Forum.
+**Organizan.** Govern de les Illes Balears (a través de la Agència de Desenvolupament Regional de les Illes Balears), Fundació BIT y Keiretsu Forum.
 
 **Objetivos de la página.**
-1. Comunicar qué es el evento y qué lo organiza, con un enlace a la fuente oficial (`fundaciobit.org/que-es-la-fundacio-bit/`).
+1. Comunicar qué es el evento y qué lo organiza, con enlaces a las webs de los organizadores (`fundaciobit.org/que-es-la-fundacio-bit/` y `adrbalears.es/`).
 2. Convertir visitas en inscripciones: dos CTAs en el hero que abren formularios externos en pestaña nueva.
 3. Permitir consultar el programa completo de los dos días sin recargar.
 4. Servir el contenido en la lengua del visitante (ca / es).
@@ -21,6 +21,7 @@ Documento de trabajo interno. El idioma del documento es español; el idioma del
 **Fuentes de contenido.**
 - `docs/programa-final.docx` → **fuente oficial del programa** (23 entradas: 13 el jueves + 10 el viernes, 9 ponentes nominales). Sustituye a `docs/programa-definitivo.docx`, que queda como histórico junto a `docs/programa.docx`.
 - `fundaciobit.org` → misión, objetivos y servicios de la Fundació BIT; definición del ParcBIT; contexto del ecosistema.
+- `adrbalears.es` → web de la Agència de Desenvolupament Regional de les Illes Balears; solo se enlaza, no se extrae contenido.
 - Nota: el `.docx` final sitúa el Foro PALMA TECH'26 a las 11:00 (los medios citaban 10:30–14:30). **Se sigue el `.docx`**.
 
 ---
@@ -32,7 +33,7 @@ Documento de trabajo interno. El idioma del documento es español; el idioma del
 | `images/hero.jpg` | 2522 × 757 (3,33:1) | Fondo del hero | Banner panorámico. El wordmark `[INN'26] INNOVATION DAYS` va impreso dentro, a la izquierda. |
 | `images/hero.svg` | viewBox 1210×363, **18 MB** | — | **No se usa.** Illustrator con 16 rasters embebidos en base64. Inviable para web. |
 | `images/logo-fbit.png` | 2481 × 970, RGBA | Cabecera | Redimensionado por CSS (`height: clamp(36px, 4.6vw, 52px)`), nunca por HTML. |
-| `images/logo-footer.jpg` | 2522 × 625, fondo blanco | Footer | Contiene los tres logos: Govern, Fundació BIT, ADR Balears. Fondo blanco → el footer es blanco. |
+| `images/logo-footer.jpg` | 2522 × 625, fondo blanco | Footer | Contiene los tres logos: Govern, Fundació BIT y el de la Agència de Desenvolupament Regional de les Illes Balears. Fondo blanco → el footer es blanco. |
 | `images/favicon.png` | 400 × 320, RGBA | Favicon | Símbolo molecular de la Fundació BIT. No cuadrado. |
 | `fonts/spacegrotesk.woff2` | 48 752 B | Tipografía | **Variable**, eje `wght` 300–700 (def. 300). Cubre 735 codepoints: incluye `àèéíòóúïçüñ¿¡·–—''""«»…€`. Sin glifos faltantes en ca/es. |
 | `fonts/SpaceGrotesk-VariableFont_wght.ttf` | 134 112 B | — | Fuente variable original. Se conserva como respaldo: si el `.woff2` dejara de ser variable, basta cambiar la línea `src`. |
@@ -85,10 +86,12 @@ Reglas de uso:
   - En ≥768px la banda vuelve a flotar (`position: absolute; inset: 0`) y el alto del hero lo fija `aspect-ratio: 2522 / 757` sobre `.hero`, con `min-height: min-content` para que el copy nunca se recorte.
 - Responsive:
   - `< 768px`: la banda va **en flujo** (117px de alto a 390px) y el copy va **debajo**, sobre el fondo oscuro. A 390px la imagen completa no da altura para los CTA encima.
-  - `768–1199px` (tablet): la banda flota y el copy se ancla **a la derecha**, limitado al 47% del ancho interior (el wordmark viene impreso en el 49,1% izquierdo de la imagen, medido sobre el asset). Si los dos CTA no caben en una fila, envuelven.
-  - `≥ 1200px` (PC y laptop): el copy vuelve a su sitio original, **abajo a la derecha y en una sola fila**, sobre la zona oscura de la imagen. A partir de 1200px la mitad derecha de la banda da para los dos botones, así que no hace falta contenerlos ni dejar que envuelvan.
+  - `768–1199px` (tablet): la banda flota y el copy se ancla **a la derecha**, limitado al 47% del ancho interior (el wordmark viene impreso en el 49,05% izquierdo de la imagen, medido sobre el asset). Los dos CTA van **apilados** (uno encima del otro) porque, compactados, no caben en una fila dentro de esa columna.
+  - `≥ 1200px` (PC y laptop): el copy vuelve a su sitio original, **abajo a la derecha y en una sola fila**, sobre la zona oscura de la imagen. La fila mide 549px y la zona libre a la derecha del wordmark son 563px a 1200px: cabe, pero **sin margen de sobra**. Si el copy del foro vuelve a crecer, hay que volver a compactar o apilar.
 - **Los CTAs van abajo a la derecha**, sobre la zona oscura de la imagen, para no colisionar con el wordmark impreso en la banda izquierda.
-- CTAs: `Inscriu-te com a assistent` / `Inscriu-te al Fòrum d’inversió` (ca) y `Inscríbete como asistente` / `Inscríbete al Foro de inversión` (es), `border-radius: 5px`, `target="_blank"` + `rel="noopener noreferrer"`.
+- CTAs: `Inscriu-te com a assistent` / `Necessites finançament? Apunta’t al fòrum` (ca) y `Inscríbete como asistente` / `¿Necesitas financiación? Apúntate al foro` (es), `border-radius: 5px`, `target="_blank"` + `rel="noopener noreferrer"`.
+- **Los CTA del hero se compactan a partir de 768px** (`font-size: 0.8125rem`, `padding: 0.8rem 0.9rem`). Motivo: el copy del foro pasó de 29 a 41 caracteres y la banda **no da para más**: el subtítulo «INNOVATION DAYS» impreso en el asset llega al **49,05% del ancho de la banda** (x=1237px sobre los 2522px del archivo), así que la fila de botones solo dispone de `552 + 0,0095·viewport` px a la derecha. Con el copy anterior la fila medía 551px y sobraban 12px; con el actual mide 658px, 95px por encima de los 563px libres, y **tapaba las letras del subtítulo**. A 1200px la fila mide 549px y deja 14px de margen real; a 1920px, 21px.
+- **El texto de los botones puede partir en dos líneas** (`white-space: normal` + `max-width: 100%` en `.hero__actions .btn` y `.cta__actions .btn`), en vez de desbordar la columna y quedar recortado por el `overflow-x: hidden` del `body`. Afecta al móvil (≤500px, donde el botón ocupa el 100% del ancho) y es la red de seguridad de tablet y escritorio.
 - `.hero__scrim` aplica dos degradados (superior e inferior) para garantizar el contraste del texto blanco.
 - **Sin parallax**: cualquier `transform` sobre la capa (`scale`/`translate`) recortaría la imagen, así que la banda es estática.
 
@@ -97,7 +100,7 @@ Reglas de uso:
 | Botón | Clave i18n | URL | Estado |
 |---|---|---|---|
 | Inscríbete como asistente / Inscriu-te com a assistent | `hero.ctaAssistant` | `https://forms.cloud.microsoft/e/FkwdHGdVYX` | ✅ Configurada |
-| Inscríbete al Foro de inversión / Inscriu-te al Fòrum d’inversió | `hero.ctaForum` | `https://keiretsuforum.es/foros-de-inversion/foro-de-inversion-palma-tech-04-12-2026/` | ✅ Configurada |
+| ¿Necesitas financiación? Apúntate al foro / Necessites finançament? Apunta’t al fòrum | `hero.ctaForum` | `https://keiretsuforum.es/foros-de-inversion/foro-de-inversion-palma-tech-04-12-2026/` | ✅ Configurada |
 
 Ambos deben mantener `target="_blank"` y `rel="noopener noreferrer"` (apertura en pestaña nueva + aislamiento de `window.opener`). El primero es un formulario de Microsoft Forms; el segundo, la página del Foro de Inversión PALMA TECH'26 en keiretsuforum.es.
 
@@ -107,7 +110,7 @@ Ambos deben mantener `target="_blank"` y `rel="noopener noreferrer"` (apertura e
 
 Dos sub-bloques en la misma sección, separados por un filete:
 
-1. **Qué son** — eyebrow, titular, tres párrafos (qué es el evento / la pregunta que responde la edición / la organización: el Govern a través de la Fundació BIT, que gestiona el ParcBit, el CentreBit Menorca y el CentreBit Eivissa, y ADR Balears) y un enlace a `fundaciobit.org`. Columna lateral con la tarjeta **"Organitzen l'edició 2026"**: Govern (a través de la Fundació BIT, que gestiona el ParcBit, el CentreBit Menorca y el CentreBit Eivissa, con la colaboración de ADR Balears), Fundació BIT y Keiretsu Forum.
+1. **Qué son** — eyebrow, titular, tres párrafos (qué es el evento / la pregunta que responde la edición / la organización: el Govern a través de la Fundació BIT, que gestiona el ParcBit, el CentreBit Menorca y el CentreBit Eivissa, y la Agència de Desenvolupament Regional de les Illes Balears) y dos enlaces apilados: «Més informació sobre la Fundació BIT» → `fundaciobit.org` y «Més informació sobre la ADRBalears» → `adrbalears.es`. Columna lateral con la tarjeta **"Organitzen l'edició 2026"**: Govern (a través de la Fundació BIT, que gestiona el ParcBit, el CentreBit Menorca y el CentreBit Eivissa, con la colaboración de la Agència de Desenvolupament Regional de les Illes Balears), Fundació BIT y Keiretsu Forum.
 2. **Descripción del evento** — parte del texto semilla ("Innovació, talent i inversió…") y lo amplía a tres párrafos: jornada del jueves (instrumentos públicos, RIS3, Turboconvo, CDTI, UAPE, hubs, casos de éxito), jornada del viernes (inversión, PALMA TECH'26, pitches, mesa redonda) y cierre (networking).
 
 Debajo, cuatro **cifras clave**: `2` jornades · `17` sessions · `9` ponents · `1` fòrum d'inversió. Los valores están **en el HTML** (`<span data-counter="17">17</span>`) y JS solo los anima: sin JS el dato es correcto.
@@ -167,7 +170,7 @@ Solo `images/logo-footer.jpg`, centrado, con `loading="lazy"`. Fondo blanco (ima
 | Hora | Contenido | Ponente |
 |---|---|---|
 | 08:45 | Acreditacions PALMA TECH'26 | — |
-| 09:15 | De la idea al mercat | Fundació Bit · ADR Balears |
+| 09:15 | De la idea al mercat | Fundació Bit · Agència de Desenvolupament Regional de les Illes Balears (ADRBalears) |
 | 09:30 | Una mirada diferent a la IA | Raquel Carrera |
 | 10:30 | Pausa cafè + acreditacions finals pel fòrum | — |
 | 11:00 | Fòrum PALMA TECH'26 | — |
@@ -177,7 +180,9 @@ Solo `images/logo-footer.jpg`, centrado, con `loading="lazy"`. Fondo blanco (ima
 | 14:20 | Lliurament del premi i cloenda de la jornada | Alejandro Sáenz de San Pedro |
 | 14:30 | Treball en xarxa i finger food | — |
 
-Nombres propios que **no** se traducen: Antoni Costa, Sebastian González, Josué Díaz, Pilar González, Xavier Nadal, Immaculada Salamanca, Dani Juan, Raquel Carrera, Alejandro Sáenz de San Pedro, ADR Balears, Fundació Bit, Keiretsu Forum, CDTI, RIS3, UAPE, PALMA TECH'26, ParcBit, CentresBit, CentreBit Menorca, CentreBit Eivissa, PATIO, Turboconvo, ADEMA, Atalaia.
+Nombres propios que **no** se traducen: Antoni Costa, Sebastian González, Josué Díaz, Pilar González, Xavier Nadal, Immaculada Salamanca, Dani Juan, Raquel Carrera, Alejandro Sáenz de San Pedro, ADRBalears, Fundació Bit, Keiretsu Forum, CDTI, RIS3, UAPE, PALMA TECH'26, ParcBit, CentresBit, CentreBit Menorca, CentreBit Eivissa, PATIO, Turboconvo, ADEMA, Atalaia.
+
+**Excepción.** El nombre completo de la ADR **sí se traduce** al castellano («Agencia de Desarrollo Regional de las Illes Balears»); solo el acrónimo `ADRBalears` se mantiene, y sin espacio, que es la grafía del `.docx` oficial.
 
 ---
 
@@ -201,7 +206,7 @@ Los tres se cargan con `defer` (se ejecutan en orden). **No se usan ES modules a
 | `data-i18n-html="clave"` | `innerHTML` (copy con `<strong>` en línea) |
 | `data-i18n-attrs="attr:clave;…"` | Cualquier atributo (`aria-label`, `title`, …) |
 
-Catálogo actual: **127 claves en el HTML + 3 de uso programático** (`meta.title`, `meta.description`, `a11y.closeMenu`) = 130 por idioma. `I18n.reportMissingKeys()` compara ambos diccionarios y avisa por consola si se desajustan.
+Catálogo actual: **124 claves en el HTML + 3 de uso programático** (`meta.title`, `meta.description`, `a11y.closeMenu`) = 127 por idioma. `I18n.reportMissingKeys()` compara ambos diccionarios y avisa por consola si se desajustan.
 
 ### 6.3 Resolución del idioma
 
@@ -290,7 +295,10 @@ Más `theme-color` (#0246CA), `og:type/title/description/image` (← `images/her
 
 **Verificado en navegador**
 - Chrome (headless): render, consola sin errores, sin overflow horizontal a 500 / 768 / 1024 / 1440 / 1920 (`scrollWidth == clientWidth` en todas). La banda del hero coincide exactamente con la caja (`2522 × 757`): **la imagen se ve completa, sin recorte**.
-- Cambio de idioma CA↔ES: paridad de claves (`I18n.reportMissingKeys()` sin avisos; 126 claves por idioma, 123 en el HTML + 3 de uso programático).
+- CTA del foro, 13 anchos (320 / 360 / 390 / 414 / 500 / 600 / 768 / 820 / 900 / 1024 / 1200 / 1440 / 1920) × 2 idiomas, midiendo el DOM: **ningún botón desborda su columna ni el viewport**, el copy del hero nunca queda recortado por la banda y la fila de CTA **nunca pisa el wordmark impreso** (margen real: 28–38px en tablet, 14–21px en escritorio). Por debajo de 500px el CTA del foro parte en dos líneas en lugar de recortarse.
+- Nombre completo de la ADR (70 caracteres), 5 anchos móviles (320 / 360 / 390 / 414 / 500) × 2 idiomas: el párrafo de organización, la tarjeta «Organitzen l'edició 2026» y la línea de ponente del viernes **envuelven sin desbordar** (`overflow-x` del documento = 0 en todos). La línea de ponente ocupa 1 línea a 1200px, 2 entre 360 y 500px y 3 a 320px.
+- Cambio de idioma CA↔ES: paridad de claves (`I18n.reportMissingKeys()` sin avisos; 127 claves por idioma, 124 en el HTML + 3 de uso programático).
+- Enlaces del bloque «Qué son»: los dos van apilados (no en la misma línea) en todos los anchos, con `target="_blank"` + `rel="noopener noreferrer"`.
 - Deep link `#programa-d2` → activa la pestaña del viernes.
 - Programa: 13 entradas el jueves (10 sesiones) y 10 el viernes (7 sesiones); horas y `<time datetime>` coherentes con el `.docx` definitivo.
 
@@ -317,9 +325,12 @@ Más `theme-color` (#0246CA), `og:type/title/description/image` (← `images/her
 1. **`hero.png` no existe**: el asset es `hero.jpg`. Si en algún momento llega un `hero.png` vertical, hay que revisar el bloque 4.2 (la banda se dimensiona con `aspect-ratio: 2522 / 757`, atada a la proporción real del archivo).
 2. **Wordmark vs. copy**: la imagen ya lleva el título del evento. Por eso el copy del hero se ancla abajo a la derecha, sobre la zona oscura, y el `h1` real queda visualmente oculto pero presente para lectores de pantalla y buscadores.
 3. **`transition` solo en `transform`** para el indicador de pestañas: animar `width` congelaba el ancho usado en algunos motores de headless y hacía la posición no determinista. El ancho se fija al instante; lo que se desliza es la posición.
-4. **Cifras clave verificadas contra el `.docx` definitivo**: 23 entradas en el programa (13 + 10) → **17 sesiones** (10 + 7). Las 6 restantes son inscripciones, acreditaciones, pausas café y networking, que no se cuentan como sesión. **9 ponentes nominales únicos** (Immaculada Salamanca aparece en los dos días). El `.docx` definitivo deja de nombrar a Áureo Díaz-Carrasco (D1 12:00) y a Sebastian González en el Foro (D2 11:00), y atribuye la sesión de las 09:15 del viernes a Fundació Bit y ADR Balears.
+4. **Cifras clave verificadas contra el `.docx` definitivo**: 23 entradas en el programa (13 + 10) → **17 sesiones** (10 + 7). Las 6 restantes son inscripciones, acreditaciones, pausas café y networking, que no se cuentan como sesión. **9 ponentes nominales únicos** (Immaculada Salamanca aparece en los dos días). El `.docx` definitivo deja de nombrar a Áureo Díaz-Carrasco (D1 12:00) y a Sebastian González en el Foro (D2 11:00), y atribuye la sesión de las 09:15 del viernes a Fundació Bit y a la Agència de Desenvolupament Regional de les Illes Balears (ADRBalears).
 5. **`hero.note` eliminado**: la frase "Accés gratuït / Acceso gratuito" no está verificada en ninguna fuente, así que no se publica.
 6. **Texto de la charla de IA**: se mantiene en castellano en ambos idiomas, porque es el título literal de la conferencia según el `.docx`.
 7. **El CTA reutiliza las claves del hero** (`hero.ctaAssistant`, `hero.ctaForum`) en lugar de crear claves nuevas. Consecuencia: cambiar el texto o la URL de un botón los cambia en los dos sitios, y no puede haber dos traducciones divergentes del mismo CTA.
 8. **El CTA invierte el botón principal a blanco** (`.cta .btn--primary`) porque un botón azul sobre fondo azul sería invisible. El secundario mantiene el aqua, que sobre el azul también funciona (13,86:1 con texto negro).
 9. **Alt del footer tipografiado en pequeño**: con `loading="lazy"` el texto alternativo se pinta mientras carga la imagen; con `font-size: var(--fs-xs)` no parece contenido roto.
+10. **Copy del CTA del foro**: `Necessites finançament? Apunta’t al fòrum` (ca) / `¿Necesitas financiación? Apúntate al foro` (es). El botón deja de describir la acción («Inscríbete al Foro de inversión») y declara la necesidad del visitante («Necesitas financiación»), que es la que mueve a firmar. El texto es más largo que el anterior (41 caracteres frente a 29), así que **la maquetación del hero tenía que ceder**: los CTA del hero se compactan a 13px desde 768px en adelante y su texto puede partir en dos líneas. Los CTA del bloque de cierre (§4.5) mantienen el tamaño estándar de 15px, porque ahí no hay wordmark que los limite. `hero.ctaForum` sigue siendo la única clave del botón, compartida por el hero (§4.2) y el bloque de inscripción (§4.5).
+11. **Nombre completo de la ADR**: en todos los textos, «ADR Balears» pasa a «Agència de Desenvolupament Regional de les Illes Balears (ADRBalears)» (ca) / «Agencia de Desarrollo Regional de las Illes Balears (ADRBalears)» (es). El motivo es que la abreviatura no identificaba por sí sola a la entidad organizadora. Se aplica en el párrafo de organización, en la tarjeta lateral «Organitzen l’edició 2026», en la línea de ponente de la sesión de las 09:15 del viernes y en el `alt` del footer. **`ADRBalears` va sin espacio** porque es la grafía del `.docx` oficial. El `alt` del footer queda en 107 caracteres: es largo, pero describe los tres logos de la imagen.
+12. **Enlace a la ADRBalears**: debajo del enlace a la Fundació BIT, dentro del bloque «Qué son» (§4.3), se añade «Més informació sobre la ADRBalears» (ca) / «Más información sobre la ADRBalears» (es) → `https://adrbalears.es/`. Los dos enlaces comparten la clase `.link-arrow` y van apilados dentro de `.about__links` (flex column, `gap: 0.75rem`): `.link-arrow` es `inline-flex`, así que sin ese contenedor los dos se habrían colocado en la misma línea. El contenedor hereda el `margin-top` de 1.75rem que separaba el enlace del párrafo anterior.

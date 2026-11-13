@@ -39,7 +39,7 @@ window.InnovationDaysI18n = {
 
     'hero.eyebrow': '3 i 4 de desembre de 2026 · Auditori ParcBIT, Palma',
     'hero.ctaAssistant': 'Inscriu-te com a assistent',
-    'hero.ctaForum': 'Inscriu-te al Fòrum d’inversió',
+    'hero.ctaForum': 'Necessites finançament? Apunta’t al fòrum',
 
     'about.eyebrow': 'El punt de trobada de la innovació balear',
     'about.title': 'Dos jornades per connectar l’ecosistema innovador de les Illes Balears',
@@ -48,16 +48,17 @@ window.InnovationDaysI18n = {
     'about.p2':
       'L’edició 2026 respon a una pregunta que es repeteix cada any: <strong>quines portes cal tocar, quin camí seguir i qui és qui</strong> en el món de la innovació? El programa articula la resposta en dos eixos: els instruments que permeten transformar una idea en un projecte viable, i l’accés al capital per fer-lo créixer.',
     'about.p3':
-      'L’organització correspon al <strong>Govern de les Illes Balears</strong>, a través de la <strong>Fundació Balear d’Innovació i Tecnologia</strong>, que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa, i l’<strong>ADR Balears</strong>. La Fundació BIT és una entitat pública sense ànim de lucre dependent del Govern: executa les estratègies d’R+D+I, dona suport a les empreses i inversors de base tecnològica en totes les fases del seu cicle de vida i promou la participació del teixit empresarial en convocatories de finançament autonòmiques, nacionals i europees.',
+      'L’organització correspon al <strong>Govern de les Illes Balears</strong>, a través de la <strong>Fundació Balear d’Innovació i Tecnologia</strong>, que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa, i l’<strong>Agència de Desenvolupament Regional de les Illes Balears (ADRBalears)</strong>. La Fundació BIT és una entitat pública sense ànim de lucre dependent del Govern: executa les estratègies d’R+D+I, dona suport a les empreses i inversors de base tecnològica en totes les fases del seu cicle de vida i promou la participació del teixit empresarial en convocatories de finançament autonòmiques, nacionals i europees.',
     'about.orgTitle': 'Organitzen l’edició 2026',
     'about.org1': 'Govern de les Illes Balears',
     'about.org1Desc':
-      'A través de la Fundació Balear d’Innovació i Tecnologia, que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa, amb la col·laboració de l’ADR Balears, l’agència de desenvolupament regional.',
+      'A través de la Fundació Balear d’Innovació i Tecnologia, que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa, amb la col·laboració de l’Agència de Desenvolupament Regional de les Illes Balears (ADRBalears).',
     'about.org2': 'Fundació Balear d’Innovació i Tecnologia',
     'about.org2Desc': 'Entitat pública sense ànim de lucre que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa.',
     'about.org3': 'Keiretsu Forum',
     'about.org3Desc': 'Xarxa internacional d’inversors privats.',
     'about.link': 'Més informació sobre la Fundació BIT',
+    'about.linkAdr': 'Més informació sobre la ADRBalears',
 
     'overview.eyebrow': 'Innovació, talent i inversió',
     'overview.title': 'Descobreix quines portes cal tocar, quin camí seguir i qui és qui en el món de la innovació',
@@ -66,9 +67,9 @@ window.InnovationDaysI18n = {
     'overview.p1':
       'El dijous 3 de desembre, la jornada se centra a <strong>Innovar a les Illes Balears</strong>: el balanç de les actuacions 2023–2026 i les oportunitats per al teixit empresarial. Hi intervenen els responsables de la RIS3 i dels principals instruments de suport —Turboconvo, CDTI i la Unitat Acceleradora de Projectes Estratègics—, els hocs d’innovació del ParcBit i els CentresBit, i casos d’èxit d’empreses de l’ecosistema que expliquen què significa innovar en primera persona.',
     'overview.p2':
-      'El divendres 4 de desembre, la jornada gira entorn de <strong>De la idea a la inversió</strong>. La Conferència i Fòrum <strong>PALMA TECH’26</strong> connecta les empreses emergents de les Illes Balears amb inversors, les empreses emergents en acció piten davant un panell qualificat i s’obre el micròfon per als inversors. La jornada es clou amb una taula rodona sobre criteris d’inversió i les claus per finançar i fer créixer una empresa emergent.',
+      'El divendres 4 de desembre, la jornada gira entorn de <strong>De la idea a la inversió</strong>. La Conferència i Fòrum <strong>PALMA TECH’26</strong> connecta les empreses emergents de les Illes Balears amb inversors, les empreses emergents en acció presenten davant un panell qualificat i s’obre el micròfon per als inversors. La jornada es clou amb una taula rodona sobre criteris d’inversió i les claus per finançar i fer créixer una empresa emergent.',
     'overview.p3':
-      'Entrem les dues sessions hi ha temps per al networking: pauses cafè, espais de contacte i finger food al final de cada dia. Els Innovation Days són, en definitiva, l’espai on el talent troba capital, les pimes troben instruments i l’ecosistema es coneix de primera mà.',
+      'Entre les dues sessions hi ha temps per al networking: pauses cafè, espais de contacte i finger food al final de cada dia. Els Innovation Days són, en definitiva, l’espai on el talent troba capital, les pimes troben instruments i l’ecosistema es coneix de primera mà.',
 
     'stats.days': 'jornades',
     'stats.sessions': 'sessions',
@@ -159,7 +160,7 @@ window.InnovationDaysI18n = {
     'program.d2s02.desc':
       'Serveis d’acompanyament, acceleració i instruments de finançament per impulsar empreses emergents i transformar idees inovadores en projectes empresarials.',
     'program.d2s02.speaker': 'Fundació Bit',
-    'program.d2s02.speaker2': 'ADR Balears',
+    'program.d2s02.speaker2': 'Agència de Desenvolupament Regional de les Illes Balears (ADRBalears)',
     'program.d2s03.title': 'Una mirada diferent a la intel·ligència artificial',
     'program.d2s03.desc':
       'Ponència: «Otra charla de IA a las 09.30 y por qué le das las gracias a una máquina».',
@@ -213,7 +214,7 @@ window.InnovationDaysI18n = {
 
     'hero.eyebrow': '3 y 4 de diciembre de 2026 · Auditorio ParcBIT, Palma',
     'hero.ctaAssistant': 'Inscríbete como asistente',
-    'hero.ctaForum': 'Inscríbete al Foro de inversión',
+    'hero.ctaForum': '¿Necesitas financiación? Apúntate al foro',
 
     'about.eyebrow': 'El punto de encuentro de la innovación balear',
     'about.title': 'Dos jornadas para conectar el ecosistema innovador de las Illes Balears',
@@ -222,17 +223,18 @@ window.InnovationDaysI18n = {
     'about.p2':
       'La edición 2026 responde a una pregunta que se repite cada año: <strong>qué puertas hay que tocar, qué camino seguir y quién es quién</strong> en el mundo de la innovación? El programa articula la respuesta en dos ejes: los instrumentos que permiten transformar una idea en un proyecto viable, y el acceso al capital para hacerlo crecer.',
     'about.p3':
-      'La organización corresponde al <strong>Govern de les Illes Balears</strong>, a través de la <strong>Fundación Balear de Innovación y Tecnología</strong>, que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa, y <strong>ADR Balears</strong>. La Fundació BIT es una entidad pública sin ánimo de lucro dependiente del Gobierno: ejecuta las estrategias de I+D+i, da soporte a las empresas e inversores de base tecnológica en todas las fases de su ciclo de vida y promueve la participación del tejido empresarial en convocatorias de financiación autonómicas, nacionales y europeas.',
+      'La organización corresponde al <strong>Govern de les Illes Balears</strong>, a través de la <strong>Fundación Balear de Innovación y Tecnología</strong>, que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa, y <strong>Agencia de Desarrollo Regional de las Illes Balears (ADRBalears)</strong>. La Fundació BIT es una entidad pública sin ánimo de lucro dependiente del Gobierno: ejecuta las estrategias de I+D+i, da soporte a las empresas e inversores de base tecnológica en todas las fases de su ciclo de vida y promueve la participación del tejido empresarial en convocatorias de financiación autonómicas, nacionales y europeas.',
     'about.orgTitle': 'Organizan la edición 2026',
     'about.org1': 'Govern de les Illes Balears',
     'about.org1Desc':
-      'A través de la Fundación Balear de Innovación y Tecnología, que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa, con la colaboración de ADR Balears, la agencia de desarrollo regional.',
+      'A través de la Fundación Balear de Innovación y Tecnología, que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa, con la colaboración de la Agencia de Desarrollo Regional de las Illes Balears (ADRBalears).',
     'about.org2': 'Fundación Balear de Innovación y Tecnología',
     'about.org2Desc':
       'Entidad pública sin ánimo de lucro que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa.',
     'about.org3': 'Keiretsu Forum',
     'about.org3Desc': 'Red internacional de inversores privados.',
     'about.link': 'Más información sobre la Fundació BIT',
+    'about.linkAdr': 'Más información sobre la ADRBalears',
 
     'overview.eyebrow': 'Innovación, talento e inversión',
     'overview.title':
@@ -335,7 +337,7 @@ window.InnovationDaysI18n = {
     'program.d2s02.desc':
       'Servicios de acompañamiento, aceleración e instrumentos de financiación para impulsar empresas emergentes y transformar ideas innovadoras en proyectos empresariales.',
     'program.d2s02.speaker': 'Fundació Bit',
-    'program.d2s02.speaker2': 'ADR Balears',
+    'program.d2s02.speaker2': 'Agencia de Desarrollo Regional de las Illes Balears (ADRBalears)',
     'program.d2s03.title': 'Una mirada diferente a la inteligencia artificial',
     'program.d2s03.desc':
       'Ponencia: «Otra charla de IA a las 09.30 y por qué le das las gracias a una máquina».',

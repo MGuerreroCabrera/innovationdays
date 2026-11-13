@@ -709,6 +709,15 @@ button {
   }
 }
 
+/* El CTA del foro es más largo que el de la edición anterior, así que los
+   botones no pueden dar por hecho que su texto cabe en una línea: si no
+   cabe, parte en dos en lugar de recortarse (el `nowrap` global los
+   desbordaría). */
+.hero__actions .btn {
+  max-width: 100%;
+  white-space: normal;
+}
+
 @media (min-width: 768px) {
   /* Escritorio: la banda vuelve a flotar y el alto del hero lo fija la
      propia imagen. min-height: min-content impide que el copy se recorte
@@ -733,6 +742,16 @@ button {
     width: 47%;
     justify-items: end;
     text-align: right;
+  }
+
+  /* Los CTA se compactan (13px en vez de 15px) para que la fila quepa a la
+     derecha sin pisar el wordmark impreso. A 1200px la zona libre a la
+     derecha del subtítulo «INNOVATION DAYS» son 563px: con el copy anterior
+     la fila medía 551px y sobraban 12px; con el actual (41 caracteres)
+     mide 658px y se come 95px del subtítulo. Compactada queda en 549px. */
+  .hero__actions .btn {
+    font-size: 0.8125rem;
+    padding: 0.8rem 0.9rem;
   }
 }
 
@@ -765,6 +784,22 @@ button {
 
 .about__copy {
   max-width: 44rem;
+}
+
+/* Los dos enlaces "más información" van apilados: `.link-arrow` es
+   inline-flex, así que sin este contenedor se fluirían en la misma línea.
+   El contenedor hereda el margen que los separaba del párrafo y el hueco
+   entre los dos enlaces los hace leer como un par. */
+.about__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.about__links .link-arrow {
+  margin-top: 0;
 }
 
 .about__aside {
@@ -1204,6 +1239,13 @@ button {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+/* Mismo criterio que en el hero: el texto del CTA del foro no siempre cabe
+   en una línea y, antes que recortarlo, parte en dos. */
+.cta__actions .btn {
+  max-width: 100%;
+  white-space: normal;
 }
 
 /* Sobre fondo azul, el botón principal se invierte a blanco. */
