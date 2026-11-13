@@ -131,7 +131,7 @@ Cierre de la página: banda de color con la llamada a la acción, situada entre 
 - Fondo `--c-blue` con dos degradados radiales en las esquinas (`--c-sky` 35% arriba a la izquierda, `--c-aqua` 28% abajo a la derecha). El centro conserva el azul puro para no degradar el contraste del texto.
 - Contenido centrado: eyebrow "Innovation Days 2026" (fijo, sin traducir), titular y entradilla.
 - **Los dos botones del hero, centrados y con los mismos enlaces**, reutilizando las claves `hero.ctaAssistant` y `hero.ctaForum`. Sobre fondo azul, `.btn--primary` se invierte a blanco con texto azul; `.btn--secondary` mantiene el aqua con texto negro.
-- Texto: `No oblidis inscriu-te` / `No olvides inscribirte` (clave `cta.title`) y una entradilla que explica las dos vías de participación (clave `cta.lead`).
+- Texto: `No oblidis inscriure-t’hi!` / `No olvides inscribirte` (clave `cta.title`) y una entradilla que explica las dos vías de participación (clave `cta.lead`).
 - Contrastes verificados: blanco sobre azul 7,69:1 (AAA), negro sobre aqua 13,86:1 (AAA).
 - Entra en el grupo de animaciones de entrada con `.cta__inner`.
 

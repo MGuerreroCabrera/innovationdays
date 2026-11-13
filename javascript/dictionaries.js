@@ -76,7 +76,7 @@ window.InnovationDaysI18n = {
     'stats.speakers': 'ponents',
     'stats.forum': 'fòrum d’inversió',
 
-    'cta.title': 'No oblidis inscriu-te',
+    'cta.title': 'No oblidis inscriure-t’hi!',
     'cta.lead':
       'Escull com vulguis participar als Innovation Days 2026: com a assistent o al Fòrum d’inversió PALMA TECH’26.',
 
