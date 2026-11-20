@@ -1286,16 +1286,53 @@ button {
   margin-inline: auto;
   padding: clamp(2.5rem, 6vw, 4rem) var(--gutter);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.site-footer__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(0.85rem, 2vw, 1.25rem);
+}
+
+.site-footer__label {
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-blue);
 }
 
 .site-footer__logos {
-  width: min(100%, 920px);
-  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1.25rem, 4vw, 2.5rem);
   /* Con loading="lazy" el texto alternativo se pinta mientras carga: se
      tipografía en pequeño para que no parezca un contenido roto. */
   color: var(--c-muted);
   font-size: var(--fs-xs);
+}
+
+/* El tamaño lo manda CSS, nunca el HTML: width/height del marcado solo
+   evitan el salto de layout mientras carga. */
+.site-footer__logos img {
+  width: auto;
+  height: clamp(36px, 6vw, 56px);
+  max-width: 100%;
+}
+
+/* Laptop y PC: a 56px los logos internos de la vicepresidencia y de la ADR
+   se leían demasiado pequeños. El salto no es grande a propósito: la fila de
+   co-organizadores pasa de ~528px a ~656px, todavía holgada en el container. */
+@media (min-width: 900px) {
+  .site-footer__logos img {
+    height: clamp(60px, 5.5vw, 72px);
+  }
 }
 
 /* 13. Volver arriba ====================================================== */

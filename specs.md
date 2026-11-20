@@ -10,7 +10,7 @@ Documento de trabajo interno. El idioma del documento es español; el idioma del
 
 **Evento.** Innovation Days 2026, dos jornadas en el ParcBit (Palma). La jornada del jueves 3 se titula *Innovar a les Illes Balears: de les idees a les oportunitats de negoci*; la del viernes 4, *De la idea a la inversió: connectant talent, innovació i capital*, e incorpora la Conferència y Foro de inversión PALMA TECH'26.
 
-**Organizan.** Govern de les Illes Balears (a través de la Agència de Desenvolupament Regional de les Illes Balears), Fundació BIT y Keiretsu Forum.
+**Organizan.** Govern de les Illes Balears (a través de la Fundació BIT y junto con la Agència de Desenvolupament Regional de les Illes Balears) y Keiretsu Forum.
 
 **Objetivos de la página.**
 1. Comunicar qué es el evento y qué lo organiza, con enlaces a las webs de los organizadores (`fundaciobit.org/que-es-la-fundacio-bit/` y `adrbalears.es/`).
@@ -19,7 +19,7 @@ Documento de trabajo interno. El idioma del documento es español; el idioma del
 4. Servir el contenido en la lengua del visitante (ca / es).
 
 **Fuentes de contenido.**
-- `docs/programa-final.docx` → **fuente oficial del programa** (23 entradas: 13 el jueves + 10 el viernes, 9 ponentes nominales). Sustituye a `docs/programa-definitivo.docx`, que queda como histórico junto a `docs/programa.docx`.
+- `docs/programa-final.docx` → **fuente oficial del programa** (23 entradas: 13 el jueves + 10 el viernes, 12 ponentes nominales en la web vigente). Sustituye a `docs/programa-definitivo.docx`, que queda como histórico junto a `docs/programa.docx`.
 - `fundaciobit.org` → misión, objetivos y servicios de la Fundació BIT; definición del ParcBIT; contexto del ecosistema.
 - `adrbalears.es` → web de la Agència de Desenvolupament Regional de les Illes Balears; solo se enlaza, no se extrae contenido.
 - Nota: el `.docx` final sitúa el Foro PALMA TECH'26 a las 11:00 (los medios citaban 10:30–14:30). **Se sigue el `.docx`**.
@@ -32,8 +32,11 @@ Documento de trabajo interno. El idioma del documento es español; el idioma del
 |---|---|---|---|
 | `images/hero.jpg` | 2522 × 757 (3,33:1) | Fondo del hero | Banner panorámico. El wordmark `[INN'26] INNOVATION DAYS` va impreso dentro, a la izquierda. |
 | `images/hero.svg` | viewBox 1210×363, **18 MB** | — | **No se usa.** Illustrator con 16 rasters embebidos en base64. Inviable para web. |
-| `images/logo-fbit.png` | 2481 × 970, RGBA | Cabecera | Redimensionado por CSS (`height: clamp(36px, 4.6vw, 52px)`), nunca por HTML. |
-| `images/logo-footer.jpg` | 2522 × 625, fondo blanco | Footer | Contiene los tres logos: Govern, Fundació BIT y el de la Agència de Desenvolupament Regional de les Illes Balears. Fondo blanco → el footer es blanco. |
+| `images/logo-fbit.png` | 2481 × 970, RGBA | Cabecera y footer | Redimensionado por CSS (`height: clamp(36px, 4.6vw, 52px)` en la cabecera, `clamp(36px, 6vw, 56px)` en el footer, `clamp(60px, 5.5vw, 72px)` desde 900px), nunca por HTML. |
+| `images/logo-govern.png` | 1063 × 414, RGBA | Footer → *Organitzador* | Único logo del primer grupo. Relación 2,57:1. |
+| `images/logo-vicepresidencia.png` | 2190 × 588, RGBA | Footer → *Co-organitzadors* | Relación 3,72:1: el más ancho de los cuatro, ocupa ~179px a alto máximo. |
+| `images/logo-adrbalears.png` | 1609 × 936, RGBA | Footer → *Co-organitzadors* | Relación 1,72:1: el más cuadrado, y por tanto el más estrecho (~83px) a igual alto. |
+| `images/logo-footer.jpg` | 2522 × 625, fondo blanco | — | **Ya no se usa.** Era el composite de los tres logos que ocupaba todo el footer; lo sustituyen las tres imágenes anteriores. El archivo se conserva. |
 | `images/favicon.png` | 400 × 320, RGBA | Favicon | Símbolo molecular de la Fundació BIT. No cuadrado. |
 | `fonts/spacegrotesk.woff2` | 48 752 B | Tipografía | **Variable**, eje `wght` 300–700 (def. 300). Cubre 735 codepoints: incluye `àèéíòóúïçüñ¿¡·–—''""«»…€`. Sin glifos faltantes en ca/es. |
 | `fonts/SpaceGrotesk-VariableFont_wght.ttf` | 134 112 B | — | Fuente variable original. Se conserva como respaldo: si el `.woff2` dejara de ser variable, basta cambiar la línea `src`. |
@@ -110,7 +113,7 @@ Ambos deben mantener `target="_blank"` y `rel="noopener noreferrer"` (apertura e
 
 Dos sub-bloques en la misma sección, separados por un filete:
 
-1. **Qué son** — eyebrow, titular, tres párrafos (qué es el evento / la pregunta que responde la edición / la organización: el Govern a través de la Fundació BIT, que gestiona el ParcBit, el CentreBit Menorca y el CentreBit Eivissa, y la Agència de Desenvolupament Regional de les Illes Balears) y dos enlaces apilados: «Més informació sobre la Fundació BIT» → `fundaciobit.org` y «Més informació sobre la ADRBalears» → `adrbalears.es`. Columna lateral con la tarjeta **"Organitzen l'edició 2026"**: Govern (a través de la Fundació BIT, que gestiona el ParcBit, el CentreBit Menorca y el CentreBit Eivissa, con la colaboración de la Agència de Desenvolupament Regional de les Illes Balears), Fundació BIT y Keiretsu Forum.
+1. **Qué son** — eyebrow, titular, tres párrafos (qué es el evento / la pregunta que responde la edición / la organización: el Govern a través de la Fundació BIT, que gestiona el ParcBit, el CentreBit Menorca y el CentreBit Eivissa, y la Agència de Desenvolupament Regional de les Illes Balears) y dos enlaces apilados: «Més informació sobre la Fundació BIT» → `fundaciobit.org` y «Més informació sobre la ADRBalears» → `adrbalears.es`. Columna lateral con la tarjeta **"Organitzen l'edició 2026"**: Govern (a través de la Fundació BIT, que gestiona el ParcBit, el CentreBit Menorca y el CentreBit Eivissa, junto con la Agència de Desenvolupament Regional de les Illes Balears). La tarjeta lista **dos elementos**: Govern de les Illes Balears y Keiretsu Forum; la Fundació BIT no figura como entrada propia, solo dentro de la descripción del Govern.
 2. **Descripción del evento** — parte del texto semilla ("Innovació, talent i inversió…") y lo amplía a tres párrafos: jornada del jueves (instrumentos públicos, RIS3, Turboconvo, CDTI, UAPE, hubs, casos de éxito), jornada del viernes (inversión, PALMA TECH'26, pitches, mesa redonda) y cierre (networking).
 
 Debajo, cuatro **cifras clave**: `2` jornades · `17` sessions · `9` ponents · `1` fòrum d'inversió. Los valores están **en el HTML** (`<span data-counter="17">17</span>`) y JS solo los anima: sin JS el dato es correcto.
@@ -137,13 +140,25 @@ Cierre de la página: banda de color con la llamada a la acción, situada entre 
 
 ### 4.6 Footer (`<footer class="site-footer">`)
 
-Solo `images/logo-footer.jpg`, centrado, con `loading="lazy"`. Fondo blanco (imagen con fondo blanco). Sin texto legal.
+Dos grupos apilados, cada uno con una etiqueta en micro mayúsculas (`.site-footer__label`: `--fs-xs`, `letter-spacing: .14em`, `--c-blue`, sin la barrita del `.eyebrow`) y su fila de logos:
+
+1. **`Organitzador`** / `Organizador` (`footer.organizer`) → `images/logo-govern.png`.
+2. **`Co-organitzadors`** / `Co-organizadores` (`footer.coorganizers`) → `logo-vicepresidencia.png`, `logo-fbit.png` y `logo-adrbalears.png`.
+
+Estructura: `.site-footer__inner` (flex column centrado) → `.site-footer__block` (flex column, etiqueta + fila) → `.site-footer__logos` (flex row con `flex-wrap: wrap`, `gap: clamp(1.25rem, 4vw, 2.5rem)`).
+
+**Tamaño**: todos los logos comparten alto fijo con `width: auto` y `max-width: 100%`, siguiendo la misma convención que `.brand__logo` de la cabecera. El tamaño lo manda CSS: los atributos `width`/`height` del marcado solo evitan el salto de layout. Dos escalones:
+
+- Base y tablet: `height: clamp(36px, 6vw, 56px)`.
+- Laptop y PC (`@media (min-width: 900px)`): `height: clamp(60px, 5.5vw, 72px)`. El salto es deliberadamente pequeño: a 56px el lockup de cuatro líneas de la vicepresidencia y el texto de la ADR se leían demasiado pequeños.
+
+Anchos de la fila de co-organizadores (vicepresidencia + Fundació BIT + ADR, `gap` de 40px): ~528px a 1200px con el escalón base, ~656px a 1440px con el de laptop/PC, y ~328px a 360px, donde `flex-wrap` la parte en dos líneas (vicepresidencia + Fundació BIT / ADR) porque no caben en los 320px útiles. Sin texto legal.
 
 ---
 
 ## 5. Modelo del programa
 
-**23 entradas en el timeline, de las cuales 17 son sesiones.** Campos por entrada: `hora` (ISO + visible), `tipo`, `título`, `descripción` (opcional; D2-04 tiene dos), `ponente` + `cargo` (opcional), segundo ponente (D2-02). Las claves `program.d1sNN` / `program.d2sNN` siguen el orden cronológico de cada día.
+**23 entradas en el timeline, de las cuales 17 son sesiones.** Campos por entrada: `hora` (ISO + visible), `tipo`, `título`, `descripción` (opcional; D2-04 tiene dos), `ponente` + `cargo` (opcional), segundo ponente (D2-02 y D2-05). Las claves `program.d1sNN` / `program.d2sNN` siguen el orden cronológico de cada día.
 
 **No cuentan como sesión** (6 entradas): las inscripciones y acreditaciones (D1 09:00, D2 08:45) y los momentos de pausa café / networking (D1 10:40, D1 14:00, D2 10:30, D2 14:30). Se marcan en el HTML con la clase `session--nonsession` (o `session--break` en los de pausa y networking) y se distinguen visualmente con un marcador más pequeño y hueco y el titular en tono secundario.
 
@@ -154,13 +169,13 @@ Solo `images/logo-footer.jpg`, centrado, con `loading="lazy"`. Fondo blanco (ima
 |---|---|---|
 | 09:00 | Inscripcions | — |
 | 09:15 | Obertura institucional | Antoni Costa |
-| 09:30 | RIS3 2027–2034 | Sebastián González |
+| 09:30 | Passat, present i futur de la innovació | Sebastián González |
 | 10:00 | Turboconvo | Josué Díaz |
 | 10:20 | CDTI | Pilar González |
 | 10:40 | Pausa per al cafè i treball en xarxa | — |
 | 11:00 | La innovació en primera persona | Modera: Xavier Nadal |
 | 12:00 | La teva pròxima oportunitat per innovar | Immaculada Salamanca |
-| 12:40 | UAPE | DG Proyectos Estratégicos |
+| 12:40 | UAPE | Bárbara Barceló |
 | 13:00 | Focus d'innovació (ParcBit i centres Bit) | Dani Juan |
 | 13:30 | Entrega de reconeixements | — |
 | 13:45 | Conclusions i cloenda | — |
@@ -170,17 +185,17 @@ Solo `images/logo-footer.jpg`, centrado, con `loading="lazy"`. Fondo blanco (ima
 | Hora | Contenido | Ponente |
 |---|---|---|
 | 08:45 | Acreditacions PALMA TECH'26 | — |
-| 09:15 | De la idea al mercat | Fundació Bit · Agència de Desenvolupament Regional de les Illes Balears (ADRBalears) |
+| 09:15 | De la idea al mercat | Immaculada Salamanca · Pere Jimenez |
 | 09:30 | Una mirada diferent a la IA | Raquel Carrera |
 | 10:30 | Pausa cafè + acreditacions finals pel fòrum | — |
-| 11:00 | Fòrum PALMA TECH'26 | — |
+| 11:00 | Fòrum PALMA TECH'26 | Sebastián González · Silvia Delgado |
 | 11:15 | Empreses emergents en acció (pitches) | — |
 | 13:15 | Què cerca un inversor? | Taula rodona |
 | 13:50 | Micròfon obert als inversors | — |
 | 14:20 | Lliurament del premi i cloenda de la jornada | Alejandro Sáenz de San Pedro |
 | 14:30 | Treball en xarxa i finger food | — |
 
-Nombres propios que **no** se traducen: Antoni Costa, Sebastián González, Josué Díaz, Pilar González, Xavier Nadal, Immaculada Salamanca, Dani Juan, Raquel Carrera, Alejandro Sáenz de San Pedro, ADRBalears, Fundació Bit, Keiretsu Forum, CDTI, RIS3, UAPE, PALMA TECH'26, ParcBit, CentresBit, CentreBit Menorca, CentreBit Eivissa, PATIO, Turboconvo, ADEMA, Atalaia.
+Nombres propios que **no** se traducen: Antoni Costa, Sebastián González, Josué Díaz, Pilar González, Xavier Nadal, Immaculada Salamanca, Dani Juan, Raquel Carrera, Alejandro Sáenz de San Pedro, Bárbara Barceló, Pere Jimenez, Silvia Delgado, ADRBalears, Fundació Bit, Keiretsu Forum, CDTI, RIS3, UAPE, PALMA TECH'26, ParcBit, CentresBit, CentreBit Menorca, CentreBit Eivissa, PATIO, Turboconvo, ADEMA, Atalaia.
 
 **Excepción.** El nombre completo de la ADR **sí se traduce** al castellano («Agencia de Desarrollo Regional de las Illes Balears»); solo el acrónimo `ADRBalears` se mantiene, y sin espacio, que es la grafía del `.docx` oficial.
 
@@ -296,11 +311,11 @@ Más `theme-color` (#0246CA), `og:type/title/description/image` (← `images/her
 **Verificado en navegador**
 - Chrome (headless): render, consola sin errores, sin overflow horizontal a 500 / 768 / 1024 / 1440 / 1920 (`scrollWidth == clientWidth` en todas). La banda del hero coincide exactamente con la caja (`2522 × 757`): **la imagen se ve completa, sin recorte**.
 - CTA del foro, 13 anchos (320 / 360 / 390 / 414 / 500 / 600 / 768 / 820 / 900 / 1024 / 1200 / 1440 / 1920) × 2 idiomas, midiendo el DOM: **ningún botón desborda su columna ni el viewport**, el copy del hero nunca queda recortado por la banda y la fila de CTA **nunca pisa el wordmark impreso** (margen real: 28–38px en tablet, 14–21px en escritorio). Por debajo de 500px el CTA del foro parte en dos líneas en lugar de recortarse.
-- Nombre completo de la ADR (70 caracteres), 5 anchos móviles (320 / 360 / 390 / 414 / 500) × 2 idiomas: el párrafo de organización, la tarjeta «Organitzen l'edició 2026» y la línea de ponente del viernes **envuelven sin desbordar** (`overflow-x` del documento = 0 en todos). La línea de ponente ocupa 1 línea a 1200px, 2 entre 360 y 500px y 3 a 320px.
-- Cambio de idioma CA↔ES: paridad de claves (`I18n.reportMissingKeys()` sin avisos; 127 claves por idioma, 124 en el HTML + 3 de uso programático).
+- Nombre completo de la ADR (69 caracteres), 5 anchos móviles (320 / 360 / 390 / 414 / 500) × 2 idiomas: el párrafo de organización y la tarjeta «Organitzen l'edició 2026» **envuelven sin desbordar** (`overflow-x` del documento = 0 en todos).
+- Cambio de idioma CA↔ES: paridad de claves (`I18n.reportMissingKeys()` sin avisos; 136 claves por idioma, 133 en el HTML + 3 de uso programático).
 - Enlaces del bloque «Qué son»: los dos van apilados (no en la misma línea) en todos los anchos, con `target="_blank"` + `rel="noopener noreferrer"`.
 - Deep link `#programa-d2` → activa la pestaña del viernes.
-- Programa: 13 entradas el jueves (10 sesiones) y 10 el viernes (7 sesiones); horas y `<time datetime>` coherentes con el `.docx` definitivo.
+- Programa: 13 entradas el jueves (10 sesiones) y 10 el viernes (7 sesiones); horas y `<time datetime>` coherentes con la fuente vigente de cada entrada (`docs/programa-final.docx`, con las 4 excepciones del §11.4).
 
 ---
 
@@ -325,12 +340,13 @@ Más `theme-color` (#0246CA), `og:type/title/description/image` (← `images/her
 1. **`hero.png` no existe**: el asset es `hero.jpg`. Si en algún momento llega un `hero.png` vertical, hay que revisar el bloque 4.2 (la banda se dimensiona con `aspect-ratio: 2522 / 757`, atada a la proporción real del archivo).
 2. **Wordmark vs. copy**: la imagen ya lleva el título del evento. Por eso el copy del hero se ancla abajo a la derecha, sobre la zona oscura, y el `h1` real queda visualmente oculto pero presente para lectores de pantalla y buscadores.
 3. **`transition` solo en `transform`** para el indicador de pestañas: animar `width` congelaba el ancho usado en algunos motores de headless y hacía la posición no determinista. El ancho se fija al instante; lo que se desliza es la posición.
-4. **Cifras clave verificadas contra el `.docx` definitivo**: 23 entradas en el programa (13 + 10) → **17 sesiones** (10 + 7). Las 6 restantes son inscripciones, acreditaciones, pausas café y networking, que no se cuentan como sesión. **9 ponentes nominales únicos** (Immaculada Salamanca aparece en los dos días). El `.docx` definitivo deja de nombrar a Áureo Díaz-Carrasco (D1 12:00) y a Sebastián González en el Foro (D2 11:00), y atribuye la sesión de las 09:15 del viernes a Fundació Bit y a la Agència de Desenvolupament Regional de les Illes Balears (ADRBalears).
+4. **Cifras clave verificadas contra el `.docx` definitivo**: 23 entradas en el programa (13 + 10) → **17 sesiones** (10 + 7). Las 6 restantes son inscripciones, acreditaciones, pausas café y networking, que no se cuentan como sesión. **12 ponentes nominales únicos** (Immaculada Salamanca y Sebastián González aparecen los dos días). El `.docx` definitivo deja de nombrar a Áureo Díaz-Carrasco (D1 12:00). **Actualización posterior al `.docx`**: las sesiones D1 09:30, D1 12:40, D2 09:15 y D2 11:00 se reescriben con copy facilitado por la organización, que pasa a ser la fuente vigente de esas cuatro entradas. Consecuencias: el Foro (D2 11:00) vuelve a nombrar a Sebastián González, la sesión de las 09:15 del viernes deja de atribuirse a Fundació Bit y a la ADRBalears para nombrar a Immaculada Salamanca y a Pere Jimenez, y entran tres ponentes nuevos (Bárbara Barceló, Pere Jimenez y Silvia Delgado), de ahí que el contador de ponentes pase de 9 a 12.
 5. **`hero.note` eliminado**: la frase "Accés gratuït / Acceso gratuito" no está verificada en ninguna fuente, así que no se publica.
 6. **Texto de la charla de IA**: se mantiene en castellano en ambos idiomas, porque es el título literal de la conferencia según el `.docx`.
 7. **El CTA reutiliza las claves del hero** (`hero.ctaAssistant`, `hero.ctaForum`) en lugar de crear claves nuevas. Consecuencia: cambiar el texto o la URL de un botón los cambia en los dos sitios, y no puede haber dos traducciones divergentes del mismo CTA.
 8. **El CTA invierte el botón principal a blanco** (`.cta .btn--primary`) porque un botón azul sobre fondo azul sería invisible. El secundario mantiene el aqua, que sobre el azul también funciona (13,86:1 con texto negro).
-9. **Alt del footer tipografiado en pequeño**: con `loading="lazy"` el texto alternativo se pinta mientras carga la imagen; con `font-size: var(--fs-xs)` no parece contenido roto.
+9. **Alt del footer tipografiado en pequeño**: con `loading="lazy"` el texto alternativo se pinta mientras carga la imagen; con `font-size: var(--fs-xs)` no parece contenido roto. Vale para el contenedor `.site-footer__logos`, que agrupa las cuatro imágenes del bloque, así que el valor se aplica ahí y las heredan.
 10. **Copy del CTA del foro**: `Necessites finançament? Apunta’t al fòrum` (ca) / `¿Necesitas financiación? Apúntate al foro` (es). El botón deja de describir la acción («Inscríbete al Foro de inversión») y declara la necesidad del visitante («Necesitas financiación»), que es la que mueve a firmar. El texto es más largo que el anterior (41 caracteres frente a 29), así que **la maquetación del hero tenía que ceder**: los CTA del hero se compactan a 13px desde 768px en adelante y su texto puede partir en dos líneas. Los CTA del bloque de cierre (§4.5) mantienen el tamaño estándar de 15px, porque ahí no hay wordmark que los limite. `hero.ctaForum` sigue siendo la única clave del botón, compartida por el hero (§4.2) y el bloque de inscripción (§4.5).
-11. **Nombre completo de la ADR**: en todos los textos, «ADR Balears» pasa a «Agència de Desenvolupament Regional de les Illes Balears (ADRBalears)» (ca) / «Agencia de Desarrollo Regional de las Illes Balears (ADRBalears)» (es). El motivo es que la abreviatura no identificaba por sí sola a la entidad organizadora. Se aplica en el párrafo de organización, en la tarjeta lateral «Organitzen l’edició 2026», en la línea de ponente de la sesión de las 09:15 del viernes y en el `alt` del footer. **`ADRBalears` va sin espacio** porque es la grafía del `.docx` oficial. El `alt` del footer queda en 107 caracteres: es largo, pero describe los tres logos de la imagen.
+11. **Nombre completo de la ADR**: en todos los textos, «ADR Balears» pasa a «Agència de Desenvolupament Regional de les Illes Balears (ADRBalears)» (ca) / «Agencia de Desarrollo Regional de las Illes Balears (ADRBalears)» (es). El motivo es que la abreviatura no identificaba por sí sola a la entidad organizadora. Se aplica en el párrafo de organización, en la tarjeta lateral «Organitzen l’edició 2026» y en el `alt` del logo ADRBalears dentro del footer (§4.6). **Excepción: los cargos de ponente** mantienen la forma corta cuando la organización la ha dictado así («Cap del servei d’emprenedoria i talent de l’ADR Balears», «Gerent de l’ADR»), porque el nombre completo no cabe de forma natural en una línea de crédito. **`ADRBalears` va sin espacio** porque es la grafía del `.docx` oficial. El footer ya **no tiene un `alt` único** (§4.6): son cuatro imágenes con su propio texto alternativo, y el de ADRBalears queda en 69 caracteres, suficiente para describir el logo sin sobrecargarlo.
 12. **Enlace a la ADRBalears**: debajo del enlace a la Fundació BIT, dentro del bloque «Qué son» (§4.3), se añade «Més informació sobre la ADRBalears» (ca) / «Más información sobre la ADRBalears» (es) → `https://adrbalears.es/`. Los dos enlaces comparten la clase `.link-arrow` y van apilados dentro de `.about__links` (flex column, `gap: 0.75rem`): `.link-arrow` es `inline-flex`, así que sin ese contenedor los dos se habrían colocado en la misma línea. El contenedor hereda el `margin-top` de 1.75rem que separaba el enlace del párrafo anterior.
+13. **Cargo único de Immaculada Salamanca**: la misma persona aparece en D1 12:00 (`program.d1s08.role`) y en D2 09:15 (`program.d2s02.role`), así que ambos usan el texto dictado por la organización: «Cap d’àrea de RDi i Comunicació de la Fundació Bit» (ca) / «Jefa de área de RDI y Comunicación de la Fundació Bit» (es). Antes divergían («Cap de l’Àrea de Comunicació i RDI» / «Responsable del Área de Comunicación y RDI»). Un cargo que cambia de redacción entre dos sesiones del mismo programa se lee como un error.

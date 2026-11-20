@@ -52,9 +52,7 @@ window.InnovationDaysI18n = {
     'about.orgTitle': 'Organitzen l’edició 2026',
     'about.org1': 'Govern de les Illes Balears',
     'about.org1Desc':
-      'A través de la Fundació Balear d’Innovació i Tecnologia, que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa, amb la col·laboració de l’Agència de Desenvolupament Regional de les Illes Balears (ADRBalears).',
-    'about.org2': 'Fundació Balear d’Innovació i Tecnologia',
-    'about.org2Desc': 'Entitat pública sense ànim de lucre que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa.',
+      'A través de la Fundació Balear d’Innovació i Tecnologia, que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa, juntament amb l’Agència de Desenvolupament Regional de les Illes Balears (ADRBalears).',
     'about.org3': 'Keiretsu Forum',
     'about.org3Desc': 'Xarxa internacional d’inversors privats.',
     'about.link': 'Més informació sobre la Fundació BIT',
@@ -79,6 +77,9 @@ window.InnovationDaysI18n = {
     'cta.title': 'No oblidis inscriure-t’hi!',
     'cta.lead':
       'Escull com vulguis participar als Innovation Days 2026: com a assistent o al Fòrum d’inversió PALMA TECH’26.',
+
+    'footer.organizer': 'Organitzador',
+    'footer.coorganizers': 'Co-organitzadors',
 
     'program.eyebrow': 'Agenda',
     'program.title': 'Programa',
@@ -111,9 +112,9 @@ window.InnovationDaysI18n = {
       'Obertura institucional: la innovació com a instrument de competitivitat i diversificació econòmica de les Illes Balears',
     'program.d1s02.speaker': 'Antoni Costa',
     'program.d1s02.role': 'Vicepresident primer del Govern de les Illes Balears',
-    'program.d1s03.title': 'Una estratègia per transformar idees en projectes',
+    'program.d1s03.title': 'Passat, present i futur de la innovació de les Illes Balears',
     'program.d1s03.desc':
-      'RIS3, prioritats d’innovació i principals instruments desenvolupats durant 2023–2026 i la futura RIS3 2027–2034.',
+      'Prioritats d’innovació i principals instruments desenvolupats durant 2023–2026. Una estratègia per transformar idees en projectes.',
     'program.d1s03.speaker': 'Sebastián González',
     'program.d1s03.role': 'Director general d’Innovació i Transformació Digital',
     'program.d1s04.title':
@@ -138,11 +139,12 @@ window.InnovationDaysI18n = {
     'program.d1s08.desc':
       'Instruments disponibles (Oficina Innobal), futures convocatòries, cooperació europea i vies d’accés als serveis.',
     'program.d1s08.speaker': 'Immaculada Salamanca',
-    'program.d1s08.role': 'Cap de l’Àrea de Comunicació i RDI de la Fundació Bit',
+    'program.d1s08.role': 'Cap d’àrea de RDi i Comunicació de la Fundació Bit',
     'program.d1s09.title': 'Unitat Acceleradora de Projectes Estratègics (UAPE)',
-    'program.d1s09.desc': 'Resultats assolits i experiència pràctica.',
-    'program.d1s09.speaker':
-      'Direcció General de Projectes Estratègics, Fons Europeus i Simplificació Administrativa',
+    'program.d1s09.desc': 'Eines de suport i experiència pràctica.',
+    'program.d1s09.speaker': 'Bárbara Barceló',
+    'program.d1s09.role':
+      'Directora General de Projectes Estratègics, Fons Europeus i Simplificació Administrativa',
     'program.d1s10.title': 'Connectar talent, empreses i coneixement',
     'program.d1s10.desc':
       'Estratègia per als focus d’innovació de les Illes Balears: ParcBit i centres Bit.',
@@ -158,9 +160,11 @@ window.InnovationDaysI18n = {
     'program.d2s02.title':
       'De la idea al mercat: recursos per emprendre, innovar i créixer a les Illes Balears',
     'program.d2s02.desc':
-      'Serveis d’acompanyament, acceleració i instruments de finançament per impulsar empreses emergents i transformar idees innovadores en projectes empresarials.',
-    'program.d2s02.speaker': 'Fundació Bit',
-    'program.d2s02.speaker2': 'Agència de Desenvolupament Regional de les Illes Balears (ADRBalears)',
+      'Serveis d’acompanyament, acceleració i instruments de finançament per impulsar startups i transformar idees innovadores en projectes empresarials.',
+    'program.d2s02.speaker': 'Immaculada Salamanca',
+    'program.d2s02.role': 'Cap d’àrea de RDi i Comunicació de la Fundació Bit',
+    'program.d2s02.speaker2': 'Pere Jimenez',
+    'program.d2s02.role2': 'Cap del servei d’emprenedoria i talent de l’ADR Balears',
     'program.d2s03.title': 'Una mirada diferent a la intel·ligència artificial',
     'program.d2s03.desc':
       'Ponència: «Otra charla de IA a las 09.30 y por qué le das las gracias a una máquina».',
@@ -172,7 +176,11 @@ window.InnovationDaysI18n = {
     'program.d2s04.desc2': 'Acreditacions finals per participar al fòrum d’inversió.',
     'program.d2s05.title': 'De l’emprenedoria a la inversió: Fòrum PALMA TECH’26',
     'program.d2s05.desc':
-      'Presentació del fòrum que connecta empreses emergents innovadors de les Illes Balears amb inversors i oportunitats de finançament.',
+      'Presentació del fòrum que connecta startups innovadores de les Illes Balears amb inversors i oportunitats de finançament.',
+    'program.d2s05.speaker': 'Sebastián González',
+    'program.d2s05.role': 'Vicepresident de la Fundació Bit',
+    'program.d2s05.speaker2': 'Silvia Delgado',
+    'program.d2s05.role2': 'Gerent de l’ADR',
     'program.d2s06.title':
       'Empreses emergents en acció: presentació de projectes davant inversors',
     'program.d2s06.desc':
@@ -227,10 +235,7 @@ window.InnovationDaysI18n = {
     'about.orgTitle': 'Organizan la edición 2026',
     'about.org1': 'Govern de les Illes Balears',
     'about.org1Desc':
-      'A través de la Fundación Balear de Innovación y Tecnología, que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa, con la colaboración de la Agencia de Desarrollo Regional de las Illes Balears (ADRBalears).',
-    'about.org2': 'Fundación Balear de Innovación y Tecnología',
-    'about.org2Desc':
-      'Entidad pública sin ánimo de lucro que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa.',
+      'A través de la Fundación Balear de Innovación y Tecnología, que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa, junto con la Agencia de Desarrollo Regional de las Illes Balears (ADRBalears).',
     'about.org3': 'Keiretsu Forum',
     'about.org3Desc': 'Red internacional de inversores privados.',
     'about.link': 'Más información sobre la Fundació BIT',
@@ -256,6 +261,9 @@ window.InnovationDaysI18n = {
     'cta.title': 'No olvides inscribirte',
     'cta.lead':
       'Elige cómo quieres participar en los Innovation Days 2026: como asistente o en el Foro de inversión PALMA TECH’26.',
+
+    'footer.organizer': 'Organizador',
+    'footer.coorganizers': 'Co-organizadores',
 
     'program.eyebrow': 'Agenda',
     'program.title': 'Programa',
@@ -288,9 +296,9 @@ window.InnovationDaysI18n = {
       'Apertura institucional: la innovación como instrumento de competitividad y diversificación económica de las Illes Balears',
     'program.d1s02.speaker': 'Antoni Costa',
     'program.d1s02.role': 'Vicepresidente primero del Gobierno de las Illes Balears',
-    'program.d1s03.title': 'Una estrategia para transformar ideas en proyectos',
+    'program.d1s03.title': 'Pasado, presente y futuro de la innovación de las Illes Balears',
     'program.d1s03.desc':
-      'RIS3, prioridades de innovación y principales instrumentos desarrollados durante 2023–2026 y la futura RIS3 2027–2034.',
+      'Prioridades de innovación y principales instrumentos desarrollados durante 2023–2026. Una estrategia para transformar ideas en proyectos.',
     'program.d1s03.speaker': 'Sebastián González',
     'program.d1s03.role': 'Director general de Innovación y Transformación Digital',
     'program.d1s04.title':
@@ -315,11 +323,12 @@ window.InnovationDaysI18n = {
     'program.d1s08.desc':
       'Instrumentos disponibles (Oficina Innobal), futuras convocatorias, cooperación europea y vías de acceso a los servicios.',
     'program.d1s08.speaker': 'Immaculada Salamanca',
-    'program.d1s08.role': 'Responsable del Área de Comunicación y RDI de la Fundació Bit',
-    'program.d1s09.title': 'Unidad Acceleradora de Proyectos Estratégicos (UAPE)',
-    'program.d1s09.desc': 'Resultados logrados y experiencia práctica.',
-    'program.d1s09.speaker':
-      'Dirección General de Proyectos Estratégicos, Fondos Europeos y Simplificación Administrativa',
+    'program.d1s08.role': 'Jefa de área de RDI y Comunicación de la Fundació Bit',
+    'program.d1s09.title': 'Unidad Aceleradora de Proyectos Estratégicos (UAPE)',
+    'program.d1s09.desc': 'Herramientas de apoyo y experiencia práctica.',
+    'program.d1s09.speaker': 'Bárbara Barceló',
+    'program.d1s09.role':
+      'Directora General de Proyectos Estratégicos, Fondos Europeos y Simplificación Administrativa',
     'program.d1s10.title': 'Conectar talento, empresas y conocimiento',
     'program.d1s10.desc':
       'Estrategia para los focos de innovación de las Illes Balears: ParcBIT y centros Bit.',
@@ -335,9 +344,11 @@ window.InnovationDaysI18n = {
     'program.d2s02.title':
       'De la idea al mercado: recursos para emprender, innovar y crecer en las Illes Balears',
     'program.d2s02.desc':
-      'Servicios de acompañamiento, aceleración e instrumentos de financiación para impulsar empresas emergentes y transformar ideas innovadoras en proyectos empresariales.',
-    'program.d2s02.speaker': 'Fundació Bit',
-    'program.d2s02.speaker2': 'Agencia de Desarrollo Regional de las Illes Balears (ADRBalears)',
+      'Servicios de acompañamiento, aceleración e instrumentos de financiación para impulsar startups y transformar ideas innovadoras en proyectos empresariales.',
+    'program.d2s02.speaker': 'Immaculada Salamanca',
+    'program.d2s02.role': 'Jefa de área de RDI y Comunicación de la Fundació Bit',
+    'program.d2s02.speaker2': 'Pere Jimenez',
+    'program.d2s02.role2': 'Jefe del servicio de emprendimiento y talento de la ADR Balears',
     'program.d2s03.title': 'Una mirada diferente a la inteligencia artificial',
     'program.d2s03.desc':
       'Ponencia: «Otra charla de IA a las 09.30 y por qué le das las gracias a una máquina».',
@@ -349,7 +360,11 @@ window.InnovationDaysI18n = {
     'program.d2s04.desc2': 'Acreditaciones finales para participar en el foro de inversión.',
     'program.d2s05.title': 'Del emprendimiento a la inversión: Foro PALMA TECH’26',
     'program.d2s05.desc':
-      'Presentación del foro que conecta empresas emergentes innovadoras de las Illes Balears con inversores y oportunidades de financiación.',
+      'Presentación del foro que conecta startups innovadoras de las Illes Balears con inversores y oportunidades de financiación.',
+    'program.d2s05.speaker': 'Sebastián González',
+    'program.d2s05.role': 'Vicepresidente de la Fundació Bit',
+    'program.d2s05.speaker2': 'Silvia Delgado',
+    'program.d2s05.role2': 'Gerente de la ADR',
     'program.d2s06.title':
       'Empresas emergentes en acción: presentación de proyectos ante inversores',
     'program.d2s06.desc':
