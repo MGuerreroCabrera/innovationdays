@@ -52,7 +52,7 @@ window.InnovationDaysI18n = {
     'about.orgTitle': 'Organitzen l’edició 2026',
     'about.org1': 'Govern de les Illes Balears',
     'about.org1Desc':
-      'A través de la Fundació Balear d’Innovació i Tecnologia, que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa, juntament amb l’Agència de Desenvolupament Regional de les Illes Balears (ADRBalears).',
+      'A través de la Direcció General d’Innovació i Transformació Digital, la Fundació Balear d’Innovació i Tecnologia, que gestiona el ParcBit, el CentreBit Menorca i el CentreBit Eivissa, i amb l’Agència de Desenvolupament Regional de les Illes Balears (ADRBalears).',
     'about.org3': 'Keiretsu Forum',
     'about.org3Desc': 'Xarxa internacional d’inversors privats.',
     'about.link': 'Més informació sobre la Fundació BIT',
@@ -164,7 +164,7 @@ window.InnovationDaysI18n = {
     'program.d2s02.speaker': 'Immaculada Salamanca',
     'program.d2s02.role': 'Cap d’àrea de RDi i Comunicació de la Fundació Bit',
     'program.d2s02.speaker2': 'Pere Jimenez',
-    'program.d2s02.role2': 'Cap del servei d’emprenedoria i talent de l’ADR Balears',
+    'program.d2s02.role2': 'Cap del servei d’emprenedoria i talent de l’ADRBalears',
     'program.d2s03.title': 'Una mirada diferent a la intel·ligència artificial',
     'program.d2s03.desc':
       'Ponència: «Otra charla de IA a las 09.30 y por qué le das las gracias a una máquina».',
@@ -180,7 +180,7 @@ window.InnovationDaysI18n = {
     'program.d2s05.speaker': 'Sebastián González',
     'program.d2s05.role': 'Vicepresident de la Fundació Bit',
     'program.d2s05.speaker2': 'Silvia Delgado',
-    'program.d2s05.role2': 'Gerent de l’ADR',
+    'program.d2s05.role2': 'Gerent de l’ADRBalears',
     'program.d2s06.title':
       'Empreses emergents en acció: presentació de projectes davant inversors',
     'program.d2s06.desc':
@@ -235,7 +235,7 @@ window.InnovationDaysI18n = {
     'about.orgTitle': 'Organizan la edición 2026',
     'about.org1': 'Govern de les Illes Balears',
     'about.org1Desc':
-      'A través de la Fundación Balear de Innovación y Tecnología, que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa, junto con la Agencia de Desarrollo Regional de las Illes Balears (ADRBalears).',
+      'A través de la Dirección General de Innovación y Transformación Digital, la Fundación Balear de Innovación y Tecnología, que gestiona el ParcBIT, el CentreBit Menorca y el CentreBit Eivissa, junto con la Agencia de Desarrollo Regional de las Illes Balears (ADRBalears).',
     'about.org3': 'Keiretsu Forum',
     'about.org3Desc': 'Red internacional de inversores privados.',
     'about.link': 'Más información sobre la Fundació BIT',
@@ -348,7 +348,7 @@ window.InnovationDaysI18n = {
     'program.d2s02.speaker': 'Immaculada Salamanca',
     'program.d2s02.role': 'Jefa de área de RDI y Comunicación de la Fundació Bit',
     'program.d2s02.speaker2': 'Pere Jimenez',
-    'program.d2s02.role2': 'Jefe del servicio de emprendimiento y talento de la ADR Balears',
+    'program.d2s02.role2': 'Jefe del servicio de emprendimiento y talento de la ADRBalears',
     'program.d2s03.title': 'Una mirada diferente a la inteligencia artificial',
     'program.d2s03.desc':
       'Ponencia: «Otra charla de IA a las 09.30 y por qué le das las gracias a una máquina».',
@@ -364,7 +364,7 @@ window.InnovationDaysI18n = {
     'program.d2s05.speaker': 'Sebastián González',
     'program.d2s05.role': 'Vicepresidente de la Fundació Bit',
     'program.d2s05.speaker2': 'Silvia Delgado',
-    'program.d2s05.role2': 'Gerente de la ADR',
+    'program.d2s05.role2': 'Gerente de la ADRBalears',
     'program.d2s06.title':
       'Empresas emergentes en acción: presentación de proyectos ante inversores',
     'program.d2s06.desc':
